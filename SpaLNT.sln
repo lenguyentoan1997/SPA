@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaLNT", "SpaLNT\SpaLNT.csproj", "{88EF6B69-A332-4679-8BC5-E5AFD22E6886}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaLNTTests", "SpaLNTTests\SpaLNTTests.csproj", "{92CE80B4-DAD1-4BE1-AA76-604457419B5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88EF6B69-A332-4679-8BC5-E5AFD22E6886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88EF6B69-A332-4679-8BC5-E5AFD22E6886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88EF6B69-A332-4679-8BC5-E5AFD22E6886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88EF6B69-A332-4679-8BC5-E5AFD22E6886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92CE80B4-DAD1-4BE1-AA76-604457419B5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92CE80B4-DAD1-4BE1-AA76-604457419B5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92CE80B4-DAD1-4BE1-AA76-604457419B5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92CE80B4-DAD1-4BE1-AA76-604457419B5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62767B55-C022-4666-A220-19041135415A}
+	EndGlobalSection
+EndGlobal

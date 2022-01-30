@@ -1,0 +1,1539 @@
+﻿/*--------------------------Header----------------------------------*/
+:root {
+    --primary-color: #b1a684;
+}
+
+/* Site Width */
+.full-width .ubermenu-nav,
+.container,
+.row {
+    max-width: 1230px
+}
+
+    .row.row-collapse {
+        max-width: 1200px
+    }
+
+    .row.row-small {
+        max-width: 1222.5px
+    }
+
+    .row.row-large {
+        max-width: 1260px
+    }
+
+body.framed,
+body.framed header,
+body.framed .header-wrapper,
+body.boxed,
+body.boxed header,
+body.boxed .header-wrapper,
+body.boxed .is-sticky-section {
+    max-width: 1260px
+}
+
+.header-main {
+    height: 100px
+}
+
+#logo img {
+    max-height: 100px
+}
+
+#logo {
+    width: 240px;
+}
+
+    #logo img {
+        padding: 5px 0;
+    }
+
+.stuck #logo img {
+    padding: 10px 0;
+}
+
+.header-top {
+    min-height: 30px
+}
+
+.has-transparent + .page-title:first-of-type,
+.has-transparent + #main > .page-title,
+.has-transparent + #main > div > .page-title,
+.has-transparent + #main .page-header-wrapper:first-of-type .page-title {
+    padding-top: 100px;
+}
+
+.header.show-on-scroll,
+.stuck .header-main {
+    height: 70px !important
+}
+
+.stuck #logo img {
+    max-height: 70px !important
+}
+
+.header-bottom {
+    background-color: #f1f1f1
+}
+
+.header-main .nav > li > a {
+    line-height: 16px
+}
+
+.stuck .header-main .nav > li > a {
+    line-height: 50px
+}
+
+
+
+.nav-dropdown {
+    border-radius: 3px
+}
+
+.nav-dropdown {
+    font-size: 100%
+}
+
+.header-top {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Color */
+.accordion-title.active,
+.has-icon-bg .icon .icon-inner,
+.logo a,
+.primary.is-underline,
+.primary.is-link,
+.badge-outline .badge-inner,
+.nav-outline > li.active > a,
+.nav-outline > li.active > a,
+.cart-icon strong,
+[data-color='primary'],
+.is-outline.primary {
+    color: #b1a684;
+}
+
+/* Color !important */
+[data-text-color="primary"] {
+    color: #b1a684 !important;
+}
+
+/* Background Color */
+[data-text-bg="primary"] {
+    background-color: #b1a684;
+}
+
+/* Background */
+.scroll-to-bullets a,
+.featured-title,
+.label-new.menu-item > a:after,
+.nav-pagination > li > .current,
+.nav-pagination > li > span:hover,
+.nav-pagination > li > a:hover,
+.has-hover:hover .badge-outline .badge-inner,
+button[type="submit"],
+.button.wc-forward:not(.checkout):not(.checkout-button),
+.button.submit-button,
+.button.primary:not(.is-outline),
+.featured-table .title,
+.is-outline:hover,
+.has-icon:hover .icon-label,
+.nav-dropdown-bold .nav-column li > a:hover,
+.nav-dropdown.nav-dropdown-bold > li > a:hover,
+.nav-dropdown-bold.dark .nav-column li > a:hover,
+.nav-dropdown.nav-dropdown-bold.dark > li > a:hover,
+.is-outline:hover,
+.tagcloud a:hover,
+.grid-tools a,
+input[type='submit']:not(.is-form),
+.box-badge:hover .box-text,
+input.button.alt,
+.nav-box > li > a:hover,
+.nav-box > li.active > a,
+.nav-pills > li.active > a,
+.current-dropdown .cart-icon strong,
+.cart-icon:hover strong,
+.nav-line-bottom > li > a:before,
+.nav-line-grow > li > a:before,
+.nav-line > li > a:before,
+.banner,
+.header-top,
+.slider-nav-circle .flickity-prev-next-button:hover svg,
+.slider-nav-circle .flickity-prev-next-button:hover .arrow,
+.primary.is-outline:hover,
+.button.primary:not(.is-outline),
+input[type='submit'].primary,
+input[type='submit'].primary,
+input[type='reset'].button,
+input[type='button'].primary,
+.badge-inner {
+    background-color: #b1a684;
+}
+
+    /* Border */
+    .nav-vertical.nav-tabs > li.active > a,
+    .scroll-to-bullets a.active,
+    .nav-pagination > li > .current,
+    .nav-pagination > li > span:hover,
+    .nav-pagination > li > a:hover,
+    .has-hover:hover .badge-outline .badge-inner,
+    .accordion-title.active,
+    .featured-table,
+    .is-outline:hover,
+    .tagcloud a:hover,
+    blockquote,
+    .has-border,
+    .cart-icon strong:after,
+    .cart-icon strong,
+    .blockUI:before,
+    .processing:before,
+    .loading-spin,
+    .slider-nav-circle .flickity-prev-next-button:hover svg,
+    .slider-nav-circle .flickity-prev-next-button:hover .arrow,
+    .primary.is-outline:hover {
+        border-color: #b1a684
+    }
+
+.nav-tabs > li.active > a {
+    border-top-color: #b1a684
+}
+
+.widget_shopping_cart_content .blockUI.blockOverlay:before {
+    border-left-color: #b1a684
+}
+
+.woocommerce-checkout-review-order .blockUI.blockOverlay:before {
+    border-left-color: #b1a684
+}
+
+/* Fill */
+.slider .flickity-prev-next-button:hover svg,
+.slider .flickity-prev-next-button:hover .arrow {
+    fill: #b1a684;
+}
+
+
+
+body {
+    font-family: "Roboto", sans-serif
+}
+
+body {
+    font-weight: 0
+}
+
+body {
+    color: #353535
+}
+
+.nav > li > a {
+    font-family: "Roboto", sans-serif;
+}
+
+.nav > li > a {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-font,
+.off-canvas-center .nav-sidebar.nav-vertical > li > a {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-font,
+.banner h1,
+.banner h2 {
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading-font {
+    color: #1c1c1c;
+}
+
+.alt-font {
+    font-family: "Dancing Script", sans-serif;
+}
+
+.header:not(.transparent) .header-nav.nav > li > a {
+    color: #5f5842;
+}
+
+    .header:not(.transparent) .header-nav.nav > li > a:hover,
+    .header:not(.transparent) .header-nav.nav > li.active > a,
+    .header:not(.transparent) .header-nav.nav > li.current > a,
+    .header:not(.transparent) .header-nav.nav > li > a.active,
+    .header:not(.transparent) .header-nav.nav > li > a.current {
+        color: #9fdef4;
+    }
+
+.header-nav.nav-line-bottom > li > a:before,
+.header-nav.nav-line-grow > li > a:before,
+.header-nav.nav-line > li > a:before,
+.header-nav.nav-box > li > a:hover,
+.header-nav.nav-box > li.active > a,
+.header-nav.nav-pills > li > a:hover,
+.header-nav.nav-pills > li.active > a {
+    color: #FFF !important;
+    background-color: #9fdef4;
+}
+
+
+
+.footer-2 {
+    background-color: #777777
+}
+
+.absolute-footer,
+html {
+    background-color: #000000
+}
+
+.label-new.menu-item > a:after {
+    content: "New";
+}
+
+.label-hot.menu-item > a:after {
+    content: "Hot";
+}
+
+.label-sale.menu-item > a:after {
+    content: "Sale";
+}
+
+.label-popular.menu-item > a:after {
+    content: "Popular";
+}
+
+
+
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+/*---------global-----------*/
+html {
+    overflow-x: hidden
+}
+
+body {
+    overflow-x: hidden
+}
+
+/*---căn đều sẳn phẩm---*/
+.has-shadow > .col > .col-inner {
+    height: 100%;
+}
+
+.flickity-viewport .col.is-selected {
+    height: 100%;
+}
+
+.flickity-viewport .col-inner {
+    height: 100%;
+}
+
+.product-small.box.has-hover.box-normal.box-text-bottom {
+    height: 100%;
+}
+
+/*.product-small.box:hover {
+     border: 2px dashed #ddd;
+}*/
+/*---giới hạn chữ tên sản phẩm---*/
+p.name.product-title a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    height: 1.3em;
+    margin-bottom: 10px;
+}
+
+/*---style product price---*/
+.price-wrapper {
+    display: table;
+}
+
+    .price-wrapper .price {
+        height: 1.3em;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        line-height: 120%;
+    }
+
+.product-short-description {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+/*---style related product---*/
+.related-products-wrapper .product-small.box {
+    background-color: #fff;
+    /*box-shadow: 0 1px 3px -2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+    border: 2px solid #ddd;
+}
+
+/*
+.related-products-wrapper .product-small.box:hover {
+    box-shadow: 0 3px 6px -4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}*/
+.related-products-wrapper .box-text.box-text-products {
+    padding: 15px;
+}
+
+.slider-nav-reveal .flickity-prev-next-button:hover,
+.slider-nav-reveal .flickity-prev-next-button {
+    width: 30px;
+    top: -2px;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 -150px 15px 0 rgba(0, 0, 0, 0);
+    margin: 0 !important;
+}
+
+/*---end style related product---*/
+
+/*-style tiêu đề bài viết trước sau-*/
+.nav-previous,
+.nav-next {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    height: auto;
+}
+
+/*---style giới hạn chữ bài viết---*/
+.blog-archive h5.post-title.is-large {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 2.6em;
+}
+
+.blog-archive p.from_the_blog_excerpt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 3em;
+}
+
+/*---style shop and product sidebar---*/
+#shop-sidebar ul,
+#product-sidebar ul,
+.post-sidebar ul {
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 15px;
+    background-color: rgba(221, 221, 221, 0.1);
+}
+
+    #shop-sidebar ul li + li,
+    #product-sidebar ul li + li,
+    .post-sidebar ul li + li {
+        border-top: 1px dashed #ececec;
+    }
+
+#shop-sidebar .is-divider,
+#product-sidebar .is-divider,
+.post-sidebar .is-divider {
+    margin-top: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#shop-sidebar ul.product_list_widget li a:not(.remove),
+#product-sidebar ul.product_list_widget li a:not(.remove) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 2.6em;
+}
+
+#shop-sidebar .recent-blog-posts a,
+#product-sidebar .recent-blog-posts a,
+.post-sidebar .recent-blog-posts a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 2.6em;
+    color: #444;
+    padding-top: 0.2em;
+}
+
+#shop-sidebar span.post_comments.op-7.block.is-xsmall,
+#product-sidebar span.post_comments.op-7.block.is-xsmall,
+#product-sidebar span.post_comments.oppercase.op-7.block.is-xsmall,
+.post-sidebar span.post_comments.op-7.block.is-xsmall {
+    display: none;
+}
+
+.post-sidebar input.search-field.mb-0 {
+    height: 40px;
+    border-radius: 3px 0 0 3px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
+}
+
+.post-sidebar button.ux-search-submit.submit-button.secondary.button.icon.mb-0 {
+    width: 40px;
+    height: 40px;
+    border-radius: 0 3px 3px 0;
+}
+
+/*---end style shop and product sidebar---*/
+/*---style filter in sidebar---*/
+ul.woocommerce-widget-layered-nav-list {
+    max-height: 300px;
+    overflow: auto;
+    padding-right: 20px;
+}
+
+ul.product_list_widget {
+    font-size: 14px;
+}
+
+/*---end style filter in sidebar---*/
+/*---style act_product---*/
+.acf_product {
+    font-size: 12px;
+    display: block;
+    background: #fffee7;
+    border: 1px solid #ccc;
+    padding: 10px !important;
+    border-radius: 5px;
+    max-height: 125px !important;
+    overflow-y: auto !important;
+    margin-bottom: 2em;
+}
+
+    .acf_product a {
+        color: #fa5400;
+    }
+
+/*---z-index sidebar mobile---*/
+.mfp-wrap {
+    z-index: 900001;
+}
+
+/*--------end global--------*/
+
+
+/*---------header-----------*/
+/*---style mona_html---*/
+.mona_html {
+    font-size: 14px;
+}
+
+    .mona_html:before {
+        content: "";
+        font-family: FontAwesome;
+        font-size: 22px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px 0 0;
+        color: #333;
+    }
+
+    .mona_html.showroom:before {
+        content: "\f015";
+    }
+
+    .mona_html.hotline:before {
+        width: 1.5em;
+        height: 1.5em;
+        content: "";
+        background: transparent url('http://localhost/mona-spa/wp-content/uploads/2018/07/customer-service.svg') no-repeat;
+        background-size: 1.5em 1.5em;
+        animation-name: tada;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    .mona_html a {
+        color: #333;
+        font-weight: 700;
+    }
+
+/*---style active nav---*/
+.header-main .nav > li:hover > a,
+.header-main .nav > li.current-menu-item > a,
+.header-main .nav > li.current-menu-parent > a,
+.header-main .nav > li.current-post-parent > a,
+.header-main .nav > li.current-product-parent > a,
+.header-main .nav > li.current_page_parent > a,
+.header-main .nav > li.current-product-ancestor > a {
+    color: #9fdef4;
+    border-bottom: solid 2px #b1a684 !important;
+}
+
+.header-main .nav > li.menu-item {
+    margin: 0 20px;
+}
+
+    .header-main .nav > li.menu-item > a {
+        color: #5f5842;
+        border-bottom: solid 2px transparent;
+    }
+
+/*--------end header--------*/
+
+
+/*---------content-----------*/
+.sec_service_price .col-left h3,
+.sec_service_price .row-bottom h3,
+.sec_reason h3,
+.sec_care h3,
+.sec_package h3,
+.sec_blog h3,
+.sec_about_intro h3,
+.sec_about_employ h3,
+.sec_about_client h3,
+.sec_contact_info h3,
+.sec_contact_form h3,
+.sec_service_intro h3 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: #b1a684;
+}
+
+.sec_service_price .col-left h1,
+.sec_service_price .row-bottom h1,
+.sec_reason h1,
+.sec_care h1,
+.sec_package h1,
+.sec_blog h1,
+.sec_about_intro h1,
+.sec_about_employ h1,
+.sec_about_client h1,
+.sec_contact_info h1,
+.sec_contact_form h1,
+.sec_service_intro h1 {
+    font-size: 2em;
+    color: #b1a684;
+}
+
+.sec_service_price h2,
+.sec_reason .icon-box-text h2,
+.sec_care .col-left h2,
+.sec_care .col-right h2,
+.sec_care .col-02 h2 {
+    color: #5f5842;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+/*---------Slider-----------*/
+.sec_slide h3 {
+    font-size: 3em;
+}
+
+.sec_slide h2 {
+    margin: 20px 0;
+    color: #ec006c;
+}
+
+.sec_slide p {
+    color: #333;
+}
+
+/*---------End Slider-----------*/
+
+/*---------Giá dịch vụ-----------*/
+.sec_service_price p {
+    color: #5f5842;
+}
+
+.sec_service_price .row-top {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+}
+
+.sec_service_price .row-bottom {
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+    background: #fff;
+}
+
+    .sec_service_price .row-bottom a.button {
+        color: #b1a684;
+    }
+
+        .sec_service_price .row-bottom a.button:hover {
+            background: #b1a684;
+            color: #fff;
+            border: solid 2px #b1a684;
+        }
+
+.sec_service_price .col-right {
+    background-image: url('../../localhost/mona-spa/wp-content/uploads/2019/06/img11.png');
+    background-repeat: no-repeat;
+    background-color: #b1a684;
+    background-position: center;
+}
+
+.sec_service_price .col-left {
+    background-image: url('../../localhost/mona-spa/wp-content/uploads/2019/06/trans1.png');
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: left bottom;
+}
+
+.sec_service_price .col-right h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.sec_service_price .col-right h3 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.sec_service_price .col-right a.button,
+.sec_service_price .all-service {
+    padding: 0.2em 3em;
+    color: #b1a684 !important;
+}
+
+    .sec_service_price .col-right a.button:hover {
+        background: #9fdef4 !important;
+        color: #fff !important;
+        box-shadow: none !important;
+    }
+
+.sec_service_price .col-right .col-inner {
+    padding: 44.2% 7%;
+}
+
+.sec_service_price .col-left .col-inner,
+.sec_service_price .row-bottom {
+    padding: 7%;
+}
+
+.sec_service_price .col-left .icon-box-text {
+    padding: 20px;
+}
+
+    .sec_service_price .col-left .icon-box-text h2 {
+        margin-bottom: 0;
+    }
+
+    .sec_service_price .col-left .icon-box-text p {
+        color: #b1a684;
+    }
+
+.sec_service_price .col-left .col-child h2.price,
+.sec_service_price .col-left .col-child h2.price-mobile {
+    color: #9fdef4;
+}
+
+.sec_service_price .col-left .col-child .col-inner {
+    padding: 0;
+}
+
+.sec_service_price .all-service {
+    border: solid 2px #b1a684;
+}
+
+    .sec_service_price .all-service:hover {
+        background: #b1a684 !important;
+        color: #fff !important;
+    }
+
+/*---------End Giá dịch vụ-----------*/
+
+/*---------Reason-----------*/
+.sec_reason .icon-box-text p {
+    margin-top: 1em;
+    color: #5f5842;
+}
+
+/*---------End Reason-----------*/
+
+/*---------Booking-----------*/
+.sec_booking .col-booking {
+    background: #b1a684;
+    background-image: url('../../localhost/mona-spa/wp-content/uploads/2019/06/trans2.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 4%;
+}
+
+.sec_booking h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.sec_booking .wpcf7 label {
+    color: #fff;
+}
+
+.sec_booking .wpcf7 .wpcf7-select {
+    margin-bottom: 0;
+}
+
+    .sec_booking .wpcf7 .wpcf7-select option {
+        color: #333;
+    }
+
+.sec_booking .wpcf7 .wpcf7-select,
+.sec_booking .wpcf7 .wpcf7-text,
+.sec_booking .wpcf7 .wpcf7-date {
+    background: none;
+    border: solid 1px #fff;
+    color: #fff;
+}
+
+.sec_booking .wpcf7 .wpcf7-submit {
+    margin-top: 20px;
+    background: #fff;
+    color: #b1a684;
+}
+
+    .sec_booking .wpcf7 .wpcf7-submit:hover {
+        background: #9fdef4 !important;
+        color: #fff !important;
+        box-shadow: none !important;
+    }
+
+/*---------End Booking-----------*/
+
+/*---------Care-----------*/
+.sec_care .col-left .col-inner {
+    padding: 9% 7%;
+}
+
+.sec_care .col-right .col-inner {
+    padding: 23% 7%;
+}
+
+.sec_care .col-02 .col-inner {
+    padding: 21.5% 7%;
+}
+
+.sec_care p {
+    color: #5f5842;
+}
+
+/*---------End Care-----------*/
+
+/*---------Package-----------*/
+.sec_package .foot-spa h4 {
+    font-size: 2em !important;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.sec_package .foot-spa h3 {
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.sec_package .col-green .col-inner {
+    padding: 21.5% 7%;
+}
+
+.sec_package .col-orange .col-inner {
+    padding: 17.9% 7%;
+}
+
+.sec_package .col-green h2,
+.sec_package .col-green p,
+.sec_package .col-orange h2,
+.sec_package .col-orange p {
+    color: #fff;
+}
+
+.sec_package .col-green h2,
+.sec_package .col-orange h2 {
+    font-weight: 500;
+}
+
+.sec_package .col-green a.button,
+.sec_package .col-orange a.button {
+    color: #b1a684 !important;
+}
+
+    .sec_package .col-green a.button:hover,
+    .sec_package .col-orange a.button:hover {
+        background: #9fdef4 !important;
+        color: #fff !important;
+        box-shadow: none !important;
+    }
+
+/*---------End Package-----------*/
+
+/*---------Blogs-----------*/
+.sec_blog .post-item .box-text {
+    background: #fff;
+    padding: 5%;
+    color: #5f5842;
+}
+
+.sec_blog .post-item .post-title {
+    margin-bottom: 1em;
+    color: #5f5842;
+}
+
+.sec_blog .post-item .is-divider {
+    display: none;
+}
+
+/*---------End Blogs-----------*/
+/*-----style contact form-----*/
+.form-ct {
+    width: 780px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+    .form-ct .form-row {
+        padding: 5px;
+        float: left;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+        .form-ct .form-row.w50 {
+            width: 50%;
+        }
+
+    .form-ct input,
+    .form-ct textarea {
+        margin-bottom: 0;
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
+    }
+
+    .form-ct .center-txt {
+        text-align: center;
+    }
+
+        .form-ct .center-txt input {
+            min-width: 50%;
+        }
+
+    .form-ct .wpcf7-form-control:focus {
+        border-color: #f8b742;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(248, 183, 66, 0.6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(248, 183, 66, 0.6);
+    }
+
+/*---end style contact form---*/
+
+/*---style mona_title---*/
+.mona_title {
+    font-size: 1.8em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.3em;
+    position: relative;
+    margin: 0;
+    margin-bottom: 0.8em;
+    padding-bottom: 1.3em;
+}
+
+    .mona_title:before {
+        position: absolute;
+        bottom: 0.75rem;
+        content: '';
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 2px;
+        background: linear-gradient(to right, #76a03f 0%, #76a03f 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 75%, #76a03f 75%);
+    }
+
+    .mona_title:after {
+        position: absolute;
+        bottom: 0;
+        content: '\f296';
+        font-family: FontAwesome;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 23px;
+        line-height: 1;
+        color: #76a03f;
+    }
+
+/*--------Page About--------*/
+.sec_about_intro p {
+    color: #5f5842;
+}
+
+.sec_about_special h1 {
+    font-size: 3rem;
+    color: #5f5842;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.sec_about_special p {
+    color: #b1a684;
+}
+
+.sec_about_employ .banner .text-box a.button {
+    font-size: 2em;
+    width: 90%;
+    border: solid 2px #b1a684;
+    color: #b1a684 !important;
+}
+
+    .sec_about_employ .banner .text-box a.button:hover {
+        background: #b1a684 !important;
+        color: #fff !important;
+    }
+
+.sec_about_employ .info {
+    background: #fff;
+    padding: 10%;
+}
+
+    .sec_about_employ .info h2 {
+        color: #5f5842;
+        font-weight: 500;
+    }
+
+    .sec_about_employ .info h4 {
+        color: #b1a684;
+    }
+
+.sec_about_client h2,
+.sec_about_client h4,
+.sec_about_client p {
+    color: #5f5842;
+}
+
+.sec_about_client h4 {
+    font-weight: 500;
+}
+
+.sec_about_product .col-img-product {
+    background-image: url('../../localhost/mona-spa/wp-content/uploads/2019/06/product-img.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    margin-bottom: -0.8%;
+}
+
+.sec_about_product h2.price {
+    color: #f06ea6;
+    font-size: 2em;
+}
+
+.sec_about_product h2.product {
+    color: #5f5842;
+    font-size: 2em;
+}
+
+.sec_about_product p.author {
+    color: #fff;
+    font-weight: bold;
+}
+
+.sec_about_product p {
+    color: #5f5842;
+}
+
+.sec_about_product a.button {
+    border: solid 2px #b1a684;
+    color: #b1a684 !important;
+    width: 100%;
+}
+
+    .sec_about_product a.button:hover {
+        background: #b1a684 !important;
+        color: #fff !important;
+    }
+
+.sec_about_hair h3 {
+    font-size: 3em;
+    color: #9fdef4;
+    margin-bottom: 0;
+}
+
+.sec_about_hair h2 {
+    color: #5f5842;
+    font-weight: 500;
+}
+
+.sec_about_hair p {
+    color: #5f5842;
+}
+
+.sec_about_hair .col-1 {
+    border-right: solid 2px #B1A684;
+}
+
+/*--------End Page About--------*/
+
+/*--------Page Contact--------*/
+.sec_contact_info h4 {
+    color: #5f5842;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.sec_contact_info p {
+    color: #5f5842;
+}
+
+.sec_contact_info .box {
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+    background: #fff;
+}
+
+    .sec_contact_info .box .col-inner {
+        padding: 10%;
+    }
+
+.sec_contact_info .icon-box-img {
+    margin: 1.5em auto;
+}
+
+.sec_contact_form .wpcf7 .wpcf7-text,
+.sec_contact_form .wpcf7 .wpcf7-textarea {
+    background: none;
+    border: solid 1px #B1A684;
+    color: #B1A684;
+    margin-bottom: 10px;
+}
+
+.sec_contact_form .wpcf7 .wpcf7-submit:hover {
+    background: #9fdef4;
+    color: #fff;
+    box-shadow: none !important;
+}
+
+/*--------End Page Contact--------*/
+
+/*--------Page Service--------*/
+.sec_service_intro h2 {
+    color: #5f5842;
+    font-weight: 500;
+}
+
+.sec_service_intro p {
+    color: #5f5842;
+}
+
+.sec_service_intro .icon-box-img {
+    width: 200px !important;
+    height: 200px !important;
+    background: #fff;
+    line-height: 200px;
+    border-radius: 100%;
+    margin-bottom: 2em;
+}
+
+    .sec_service_intro .icon-box-img:hover {
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+        transition: all 0.3s linear 0s;
+    }
+
+    .sec_service_intro .icon-box-img img {
+        width: 90px;
+    }
+
+.sec_service_step p {
+    color: #5f5842;
+}
+
+.sec_service_step .col-large {
+    padding: 4% 3% 0 !important;
+    background-image: url('../../localhost/mona-spa/wp-content/uploads/2019/07/img18.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.sec_service_step .col-small-right,
+.sec_service_step .col-small-left {
+    height: max-content;
+}
+
+.sec_service_step .col-small-left {
+    border-right: solid 1px #B1A684;
+}
+
+    .sec_service_step .col-small-left h2.stt {
+        color: #B1A684;
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+.sec_service_step .col-small-right h2.step {
+    color: #5f5842;
+    font-weight: 500;
+}
+
+.sec_service_step .col-small-right p {
+    color: #B1A684;
+    margin-bottom: 0;
+}
+
+.sec_service_open .col-right {
+    background: #fff;
+    border: solid 5px #9fdef4;
+    background-image: url('../../localhost/mona-spa/wp-content/uploads/2019/07/parallax33.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+    .sec_service_open .col-right .col-inner {
+        padding: 10%;
+    }
+
+    .sec_service_open .col-right h2 {
+        color: #B1A684;
+    }
+
+    .sec_service_open .col-right p {
+        color: #5f5842;
+    }
+
+/*--------End Page Service--------*/
+/*--------end content--------*/
+
+/*---------footer-----------*/
+.sec_footer {
+    border-bottom: solid 1px #b1a684;
+}
+
+.copyright-footer {
+    color: #fff;
+}
+
+.sec_footer .row-top .col-6-left .col-inner,
+.sec_footer .row-top .col-6-right .col-inner {
+    padding: 10%;
+}
+
+.sec_footer .row-top .col-6-left p,
+.sec_footer .row-top .col-6-right p {
+    color: #5f5842;
+    width: 75%;
+    margin: 0 auto;
+}
+
+    .sec_footer .row-top .col-6-right p.hotline {
+        font-size: 14px;
+    }
+
+.sec_footer .row-top .wpcf7 p {
+    display: initial !important;
+}
+
+.sec_footer .row-top .wpcf7 .wpcf7-text {
+    border: none !important;
+    background: #f7f6ed;
+    height: 50px !important;
+    width: 80%;
+}
+
+.sec_footer .row-top .wpcf7 .wpcf7-submit {
+    border-radius: 0 !important;
+    font-size: 0.8em;
+    background: none;
+    color: #b1a684;
+    border: solid 2px #b1a684;
+}
+
+    .sec_footer .row-top .wpcf7 .wpcf7-submit:hover {
+        background: #b1a684;
+        color: #fff;
+    }
+
+.sec_footer .row-top h4 {
+    color: #b1a684;
+    font-size: 2em;
+}
+
+.sec_footer h2 {
+    color: #b1a684;
+}
+
+.sec_footer p {
+    color: #5f5842;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.sec_footer a {
+    color: #5f5842;
+    font-size: 18px;
+}
+
+    .sec_footer a:hover {
+        color: #9fdef4 !important;
+    }
+
+.sec_footer .icon-box-img {
+    width: 14px !important;
+}
+
+.mona_sidebar_footer ul {
+    margin: 0;
+}
+
+    .mona_sidebar_footer ul.menu > li + li,
+    .mona_sidebar_footer .widget > ul > li + li {
+        border-top: 1px dashed rgba(238, 238, 238, 0.3);
+    }
+
+    .mona_sidebar_footer ul li a:before {
+        content: "\f0da";
+        font-family: FontAwesome;
+        display: inline-block;
+        vertical-align: baseline;
+        margin: 0 15px 0 5px;
+    }
+
+    .mona_sidebar_footer ul li:hover a:before {
+        animation-name: tada;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    .mona_sidebar_footer ul li a:after {
+        content: "\f0fb";
+        font-family: FontAwesome;
+        display: inline-block;
+        vertical-align: baseline;
+        margin: 0 5px 0 15px;
+        position: absolute;
+        right: 0;
+        transition: 2s;
+        -moz-transition: 2s;
+        -webkit-transition: 2s;
+        -o-transition: 2s;
+    }
+
+    .mona_sidebar_footer ul li:hover a:after {
+        -webkit-animation: spin 1s;
+        -moz-animation: spin 1s;
+        animation: spin 1s;
+        right: 30%;
+    }
+
+
+
+
+
+    .mona_sidebar_footer ul > li:hover > a,
+    .mona_sidebar_footer ul > li.current-menu-item > a,
+    .mona_sidebar_footer ul > li.current-menu-parent > a,
+    .mona_sidebar_footer ul > li.current-post-parent > a,
+    .mona_sidebar_footer ul > li.current_page_parent > a,
+    .mona_sidebar_footer ul > li.current-product-parent > a,
+    .mona_sidebar_footer ul > li.current-product-ancestor > a {
+        color: #7da500;
+    }
+
+/*---style form dang ky---*/
+.sec_footer form.wpcf7-form {
+    margin-bottom: 0;
+}
+
+.sec_footer .wpcf7 p {
+    display: inline-flex;
+}
+
+.sec_footer input#email-dang-ky {
+    height: 40px;
+    border-radius: 3px 0 0 3px;
+    border-right: 0;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
+}
+
+.sec_footer input#btn-gui {
+    height: 40px;
+    border-radius: 0 3px 3px 0;
+}
+
+.mona-hiden {
+    display: none !important;
+}
+
+#btn-gui-icon {
+    height: 40px;
+    border-radius: 0 3px 3px 0;
+    color: #02a010;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0);
+    border: 1px solid #ddd;
+    border-left: 0;
+    cursor: pointer;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*--------end footer--------*/
+/*-----style Laptop mode-----*/
+
+
+.sec_package .col-green .col-inner,
+.sec_package .col-orange .col-inner {
+    margin-left: -20px;
+}
+
+.sec_footer .row-top .col-6-left {
+    border-right: solid 1px #5f5842;
+}
+
+}
+
+/*-----end style Laptop mode-----*/
+/*-----style tablet mode-----*/
+
+
+.sec_service_price .col-right .col-inner {
+    padding: 7%;
+}
+
+.sec_care .col-left .col-inner,
+.sec_care .col-right .col-inner,
+.sec_care .col-02 .col-inner {
+    padding: 7%;
+}
+
+.sec_package .col-orange .col-inner {
+    margin-left: -20px;
+    padding: 21% 7%;
+}
+
+.sec_package .col-green .col-inner {
+    margin-left: -20px;
+    padding: 17% 7%;
+}
+
+.sec_footer .row-top .col-6-left .col-inner,
+.sec_footer .row-top .col-6-right .col-inner {
+    padding-top: 15%;
+}
+
+.sec_footer .row-top .col-6-left {
+    border-right: solid 1px #5f5842;
+}
+
+.sec_contact_info .box {
+    margin-bottom: 8%;
+}
+
+.sec_service_intro .icon-box-img {
+    width: 180px !important;
+    height: 180px !important;
+    line-height: 180px;
+}
+
+}
+
+/*---end style mobile mode---*/
+/*-----style mobile mode-----*/
+
+
+.sec_service_price .col-left h1,
+.sec_service_price .row-bottom h1,
+.sec_reason h1,
+.sec_care h1,
+.sec_package h1,
+.sec_blog h1 {
+    font-size: 1.8em;
+    color: #b1a684;
+}
+
+.sec_service_price .col-left .icon-box-text h2 {
+    font-size: 1.2em;
+}
+
+.sec_service_price .col-left .icon-box-text p {
+    margin-bottom: 10px;
+}
+
+.sec_service_price .col-left .icon-box-text {
+    padding: 10px;
+}
+
+.sec_package .col-green .col-inner,
+.sec_package .col-orange .col-inner {
+    margin-top: -20px;
+    margin-left: 0;
+    padding: 10% 7%;
+}
+
+.sec_package .col-green h2,
+.sec_package .col-orange h2,
+.sec_about_employ .info h2,
+.sec_service_intro h2,
+.sec_service_step .col-small-right h2.step,
+.sec_service_open .col-right h2 {
+    font-size: 1.5em;
+}
+
+.sec_service_price .col-left .col-child h2.price-mobile {
+    display: initial;
+}
+
+.sec_about_product .col-img-product {
+    margin-bottom: 0 !important;
+}
+
+.sec_contact_info .box {
+    margin-bottom: 10%;
+}
+
+.sec_contact_form .wpcf7 .form-row {
+    width: 100%;
+}
+
+.sec_footer .row-top .col-6-left .col-inner {
+    border-bottom: solid 1px #5f5842;
+    padding: 10% 0 !important;
+}
+
+.sec_service_open .col-right .col-inner {
+    padding: 15% 10%;
+}
+
+}
+
+/*---end style mobile mode---*/
+/*--------------------------Header----------------------------------*/

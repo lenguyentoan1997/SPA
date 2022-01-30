@@ -1,0 +1,381 @@
+﻿@model SpaLNT.Models.Spa.Product
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@Styles.Render("~/Areas/Admin/Content/css/branches/create")
+
+<style>
+    #productAvatar {
+        max-height: 250px;
+    }
+
+    #thumbnail1Pro, #thumbnail2Pro, #thumbnail3Pro {
+        max-height: 100px;
+    }
+
+    #inputAvatarPro, #inputThumbnail1Pro, #inputThumbnail2Pro, #inputThumbnail3Pro {
+        margin: auto;
+        max-width: 180px;
+    }
+
+    .form-group {
+        text-align: right;
+    }
+</style>
+
+<div class="page-breadcrumb">
+    <div class="row">
+        <div class="col-md-5 align-self-center">
+            <h3 class="page-title">Products</h3>
+            <div class="d-flex align-items-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            @Html.ActionLink("Home", "Index", "Home")
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Products  Manager
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Create
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="widget-content searchable-container list">
+        <div class="card card-body">
+            <div class="d-flex no-block align-items-center mb-4">
+                <h4 class="card-title">Create Products</h4>
+            </div>
+
+            @using (Html.BeginForm("Create", "Products", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div class="form-horizontal">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-7">
+
+                                <!--product name-->
+                                <div class="row create-product-name">
+                                    <div class="col-lg-1 col-2 icon-branch-create">
+                                        <svg viewBox="0 0 24 24"
+                                             width="24"
+                                             height="24"
+                                             stroke="currentColor"
+                                             stroke-width="2"
+                                             fill="none"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round">
+                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="12" cy="7" r="4"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="col-lg-11 col-10">
+                                        <div class="form-floating mb-3">
+                                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Name" } })
+                                            <label for="tb-rfname">Name</label>
+                                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--product description-->
+                                <div class="row create-product-description">
+                                    <div class="col-lg-1 col-2 icon-branch-create">
+                                        <svg viewBox="0 0 24 24"
+                                             width="24"
+                                             height="24"
+                                             stroke="currentColor"
+                                             stroke-width="2"
+                                             fill="none"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                             class="css-i6dzq1">
+                                            <path d="M12 20h9"></path>
+                                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="col-lg-11 col-10">
+                                        <div class="form-floating mb-3">
+                                            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Description" } })
+                                            <label for="tb-rfname">Description</label>
+                                            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--product type-->
+                                <div class="row create-product-type">
+                                    <div class="col-lg-1 col-2 icon-branch-create">
+                                        <svg viewBox="0 0 24 24"
+                                             width="24"
+                                             height="24"
+                                             stroke="currentColor"
+                                             stroke-width="2"
+                                             fill="none"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                             class="css-i6dzq1">
+                                            <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                                            <line x1="9" y1="20" x2="15" y2="20"></line>
+                                            <line x1="12" y1="4" x2="12" y2="20"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="col-lg-11 col-10">
+                                        <div class="form-floating mb-3">
+                                            @Html.DropDownList("TypeId", null, htmlAttributes: new { @class = "form-control" })
+                                            <label for="tb-rfname">Type</label>
+                                            @Html.ValidationMessageFor(model => model.TypeId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--product factory-->
+                                <div class="row create-product-factory">
+                                    <div class="col-lg-1 col-2 icon-branch-create">
+                                        <svg viewBox="0 0 24 24"
+                                             width="24"
+                                             height="24"
+                                             stroke="currentColor"
+                                             stroke-width="2"
+                                             fill="none"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                             class="css-i6dzq1">
+                                            <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                                            <line x1="9" y1="20" x2="15" y2="20"></line>
+                                            <line x1="12" y1="4" x2="12" y2="20"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="col-lg-11 col-10">
+                                        <div class="form-floating mb-3">
+                                            @Html.DropDownList("FactoryId", null, htmlAttributes: new { @class = "form-control" })
+                                            <label for="tb-rfname">Factory</label>
+                                            @Html.ValidationMessageFor(model => model.FactoryId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--product provider-->
+                                <div class="row create-product-provider">
+                                    <div class="col-lg-1 col-2 icon-branch-create">
+                                        <svg viewBox="0 0 24 24"
+                                             width="24"
+                                             height="24"
+                                             stroke="currentColor"
+                                             stroke-width="2"
+                                             fill="none"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                             class="css-i6dzq1">
+                                            <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                                            <line x1="9" y1="20" x2="15" y2="20"></line>
+                                            <line x1="12" y1="4" x2="12" y2="20"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="col-lg-11 col-10">
+                                        <div class="form-floating mb-3">
+                                            @Html.DropDownList("ProviderId", null, htmlAttributes: new { @class = "form-control" })
+                                            <label for="tb-rfname">Provider</label>
+                                            @Html.ValidationMessageFor(model => model.ProviderId, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--product import-->
+                                <div class="row create-product-import">
+                                    <div class="col-lg-1 col-2 icon-branch-create">
+                                        <svg viewBox="0 0 24 24"
+                                             width="24"
+                                             height="24"
+                                             stroke="currentColor"
+                                             stroke-width="2"
+                                             fill="none"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                             class="css-i6dzq1">
+                                            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                                            <polyline points="10 17 15 12 10 7"></polyline>
+                                            <line x1="15" y1="12" x2="3" y2="12"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="col-lg-11 col-10">
+                                        <div class="form-floating mb-3">
+                                            @Html.EditorFor(model => model.ImportPrice, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Import Price" } })
+                                            <label for="tb-rfname">Import Price</label>
+                                            @Html.ValidationMessageFor(model => model.ImportPrice, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--product export-->
+                                <div class="row create-product-import">
+                                    <div class="col-lg-1 col-2 icon-branch-create">
+                                        <svg viewBox="0 0 24 24"
+                                             width="24"
+                                             height="24"
+                                             stroke="currentColor"
+                                             stroke-width="2"
+                                             fill="none"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                             class="css-i6dzq1">
+                                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                            <polyline points="16 17 21 12 16 7"></polyline>
+                                            <line x1="21" y1="12" x2="9" y2="12"></line>
+                                        </svg>
+                                    </div>
+                                    <div class="col-lg-11 col-10">
+                                        <div class="form-floating mb-3">
+                                            @Html.EditorFor(model => model.ExportPrice, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Export Price" } })
+                                            <label for="tb-rfname">Export Price</label>
+                                            @Html.ValidationMessageFor(model => model.ExportPrice, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--product code-->
+                                <div class="row create-product-import">
+                                    <div class="col-lg-1 col-2 icon-branch-create">
+                                        <svg viewBox="0 0 24 24"
+                                             width="24"
+                                             height="24"
+                                             stroke="currentColor"
+                                             stroke-width="2"
+                                             fill="none"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round">
+                                            <polyline points="16 18 22 12 16 6"></polyline>
+                                            <polyline points="8 6 2 12 8 18"></polyline>
+                                        </svg>
+                                    </div>
+                                    <div class="col-lg-11 col-10">
+                                        <div class="form-floating mb-3">
+                                            @Html.EditorFor(model => model.ProductCode, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Product Code" } })
+                                            <label for="tb-rfname">Product Code</label>
+                                            @Html.ValidationMessageFor(model => model.ProductCode, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--product discount-->
+                                <div class="row create-product-import">
+                                    <div class="col-lg-1 col-2 icon-branch-create">
+                                        <svg viewBox="0 0 24 24"
+                                             width="24"
+                                             height="24"
+                                             stroke="currentColor"
+                                             stroke-width="2"
+                                             fill="none"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                             class="css-i6dzq1">
+                                            <line x1="19" y1="5" x2="5" y2="19"></line>
+                                            <circle cx="6.5" cy="6.5" r="2.5"></circle>
+                                            <circle cx="17.5" cy="17.5" r="2.5"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="col-lg-11 col-10">
+                                        <div class="form-floating mb-3">
+                                            @Html.EditorFor(model => model.Discount, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Discount", @Value = "0" } })
+                                            <label for="tb-rfname">Discount</label>
+                                            @Html.ValidationMessageFor(model => model.Discount, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-5">
+                                <div class="product-avatar text-center">
+                                    <img id="productAvatar" src="~/Areas/Admin/Content/img/Product/defaultAvaProduct.jpg" />
+                                    @Html.TextBoxFor(model => model.ImgAvatar, htmlAttributes: new { @class = "form-control", @type = "File", @id = "inputAvatarPro", @name = "avatar", @onchange = "loadAvatar(this)", @accept = "image/*" })
+                                </div>
+                                <br />
+                                <div class="row">
+                                    <div class="col-4 text-center">
+                                        <img id="thumbnail1Pro" src="~/Areas/Admin/Content/img/Product/defaultAvaProduct.jpg" />
+                                        @Html.TextBoxFor(model => model.Thumbnail1, htmlAttributes: new { @class = "form-control", @type = "File", @id = "inputThumbnail1Pro", @name = "avatar", @onchange = "loadThumbnail1(this)", @accept = "image/*" })
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <img id="thumbnail2Pro" src="~/Areas/Admin/Content/img/Product/defaultAvaProduct.jpg" />
+                                        @Html.TextBoxFor(model => model.Thumbnail2, htmlAttributes: new { @class = "form-control", @type = "File", @id = "inputThumbnail2Pro", @name = "avatar", @onchange = "loadThumbnail2(this)", @accept = "image/*" })
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <img id="thumbnail3Pro" src="~/Areas/Admin/Content/img/Product/defaultAvaProduct.jpg" />
+                                        @Html.TextBoxFor(model => model.Thumbnail3, htmlAttributes: new { @class = "form-control", @type = "File", @id = "inputThumbnail3Pro", @name = "avatar", @onchange = "loadThumbnail3(this)", @accept = "image/*" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" value="Create" class="btn btn-default" />
+                                <a class="dt-button buttons-html5 btn btn-danger mr-1" href="@Url.Action("Index")">Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<script>
+    function loadAvatar(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#productAvatar').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function loadThumbnail1(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#thumbnail1Pro').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function loadThumbnail2(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#thumbnail2Pro').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function loadThumbnail3(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#thumbnail3Pro').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+
+
+
+
+
+
+

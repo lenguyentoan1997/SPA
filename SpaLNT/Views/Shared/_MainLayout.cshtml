@@ -1,0 +1,2493 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+  
+    @Styles.Render("~/Content/bootstrap")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/wp-content")
+    @Styles.Render("~/Content/wp-includes")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        .mypage-alo-ph-circle {
+            border-color: #cc9a00;
+        }
+
+        .mypage-alo-ph-circle-fill {
+            background-color: #cc9a00;
+        }
+
+        .mypage-alo-ph-img-circle {
+            background-color: #cc9a00;
+        }
+
+        .mypage-alo-phone:hover .mypage-alo-ph-circle {
+            border-color: #43b91e;
+        }
+
+        .mypage-alo-phone:hover .mypage-alo-ph-circle-fill {
+            background-color: #43b91e;
+        }
+
+        .mypage-alo-phone:hover .mypage-alo-ph-img-circle {
+            background-color: #43b91e;
+        }
+    </style>
+    <style>
+        .bg {
+            opacity: 0;
+            transition: opacity 1s;
+            -webkit-transition: opacity 1s;
+        }
+
+        .bg-loaded {
+            opacity: 1;
+        }
+    </style>
+
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: ["Roboto:regular,700", "Roboto:regular,regular", "Roboto:regular,700", "Dancing+Script",] }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = '../../ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();</script>
+    <noscript>
+        <style>
+            .woocommerce-product-gallery {
+                opacity: 1 !important;
+            }
+        </style>
+    </noscript>
+    <style type="text/css">
+        .essb_links_list li.essb_totalcount_item .essb_t_l_big .essb_t_nb:after,
+        .essb_links_list li.essb_totalcount_item .essb_t_r_big .essb_t_nb:after {
+            color: #777777;
+            content: "shares";
+            display: block;
+            font-size: 11px;
+            font-weight: normal;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: -5px;
+        }
+
+        .essb_links_list li.essb_totalcount_item .essb_t_l_big,
+        .essb_links_list li.essb_totalcount_item .essb_t_r_big {
+            text-align: center;
+        }
+
+        .essb_displayed_sidebar .essb_links_list li.essb_totalcount_item .essb_t_l_big .essb_t_nb:after,
+        .essb_displayed_sidebar .essb_links_list li.essb_totalcount_item .essb_t_r_big .essb_t_nb:after {
+            margin-top: 0px;
+        }
+
+        .essb_displayed_sidebar_right .essb_links_list li.essb_totalcount_item .essb_t_l_big .essb_t_nb:after,
+        .essb_displayed_sidebar_right .essb_links_list li.essb_totalcount_item .essb_t_r_big .essb_t_nb:after {
+            margin-top: 0px;
+        }
+
+        .essb_totalcount_item_before,
+        .essb_totalcount_item_after {
+            display: block !important;
+        }
+
+            .essb_totalcount_item_before .essb_totalcount,
+            .essb_totalcount_item_after .essb_totalcount {
+                border: 0px !important;
+            }
+
+        .essb_counter_insidebeforename {
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        .essb_width_columns_1 li {
+            width: 100%;
+        }
+
+            .essb_width_columns_1 li a {
+                width: 92%;
+            }
+
+        .essb_width_columns_2 li {
+            width: 49%;
+        }
+
+            .essb_width_columns_2 li a {
+                width: 86%;
+            }
+
+        .essb_width_columns_3 li {
+            width: 32%;
+        }
+
+            .essb_width_columns_3 li a {
+                width: 80%;
+            }
+
+        .essb_width_columns_4 li {
+            width: 24%;
+        }
+
+            .essb_width_columns_4 li a {
+                width: 70%;
+            }
+
+        .essb_width_columns_5 li {
+            width: 19.5%;
+        }
+
+            .essb_width_columns_5 li a {
+                width: 60%;
+            }
+
+        .essb_width_columns_6 li {
+            width: 16%;
+        }
+
+            .essb_width_columns_6 li a {
+                width: 55%;
+            }
+
+        .essb_links li.essb_totalcount_item_before,
+        .essb_width_columns_1 li.essb_totalcount_item_after {
+            width: 100%;
+            text-align: left;
+        }
+
+        .essb_network_align_center a {
+            text-align: center;
+        }
+
+        .essb_network_align_right .essb_network_name {
+            float: right;
+        }
+    </style>
+
+    <style id="tt-easy-google-font-styles" type="text/css">
+        p {
+        }
+
+        h1 {
+        }
+
+        h2 {
+        }
+
+        h3 {
+            font-family: 'Great Vibes';
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        h4 {
+        }
+
+        h5 {
+        }
+
+        h6 {
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header" class="header has-sticky sticky-jump">
+            <div class="header-wrapper">
+                <div id="masthead" class="header-main ">
+                    <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+                        <!-- Logo -->
+                        <div id="logo" class="flex-col logo">
+                            <!-- Header logo -->
+                            <a href="index.html" title="Spa Mona" rel="home">
+                                <img width="240" height="100" src="~/Content/img/uploads/2019/06/logo-mona - Copy.png"
+                                     class="header_logo header-logo" alt="Spa Mona" /><img width="240" height="100"
+                                                                                           src="~/Content/img/uploads/2019/06/logo-mona - Copy.png" class="header-logo-dark"
+                                                                                           alt="Spa Mona" />
+                            </a>
+                        </div>
+
+                        <!-- Mobile Left Elements -->
+                        <div class="flex-col show-for-medium flex-left">
+                            <ul class="mobile-nav nav nav-left ">
+                                <li class="nav-icon has-icon">
+                                    <a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay"
+                                       data-color="" class="is-small" aria-controls="main-menu" aria-expanded="false">
+
+                                        <i class="icon-menu"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Left Elements -->
+                        <div class="flex-col hide-for-medium flex-left flex-grow">
+                            <ul class="header-nav header-nav-main nav nav-left  nav-size-medium nav-uppercase">
+                            </ul>
+                        </div>
+
+                        <!-- Right Elements -->
+                        <div class="flex-col hide-for-medium flex-right">
+                            <ul class="header-nav header-nav-main nav nav-right  nav-size-medium nav-uppercase">
+                                <li id="menu-item-24"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16 current_page_item active  menu-item-24">
+                                    <a href="index.html" class="nav-top-link">Trang chủ</a>
+                                </li>
+                                <li id="menu-item-22"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-22">
+                                    <a href="gioi-thieu/index.html" class="nav-top-link">Giới thiệu</a>
+                                </li>
+                                <li id="menu-item-952"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-952">
+                                    <a href="dich-vu/index.html" class="nav-top-link">Dịch vụ</a>
+                                </li>
+                                <li id="menu-item-25"
+                                    class="menu-item menu-item-type-taxonomy menu-item-object-category  menu-item-25">
+                                    <a href="category/tin-tuc/index.html" class="nav-top-link">Tin tức</a>
+                                </li>
+                                <li id="menu-item-23"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-23">
+                                    <a href="lien-he/index.html" class="nav-top-link">Liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Mobile Right Elements -->
+                        <div class="flex-col show-for-medium flex-right">
+                            <ul class="mobile-nav nav nav-right ">
+                            </ul>
+                        </div>
+
+                    </div><!-- .header-inner -->
+                    <!-- Header divider -->
+                    <div class="container">
+                        <div class="top-divider full-width"></div>
+                    </div>
+                </div><!-- .header-main -->
+                <div class="header-bg-container fill">
+                    <div class="header-bg-image fill"></div>
+                    <div class="header-bg-color fill"></div>
+                </div><!-- .header-bg-container -->
+            </div><!-- header-wrapper-->
+        </header>
+
+
+        <main id="main" class="">
+
+
+            <div id="content" role="main" class="content-area">
+
+
+                <section class="section sec_slide" id="section_1449386483">
+                    <div class="bg section-bg fill bg-fill  bg-loaded">
+
+
+
+
+
+                    </div><!-- .section-bg -->
+
+                    <div class="section-content relative">
+
+                        <div class="slider-wrapper relative " id="slider-463908948">
+                            <div class="slider slider-nav-dots-dashes slider-nav-circle slider-nav-large slider-nav-light slider-style-normal"
+                                 data-flickity-options='{
+            "cellAlign": "center",
+            "imagesLoaded": true,
+            "lazyLoad": 1,
+            "freeScroll": false,
+            "wrapAround": true,
+            "autoPlay": 6000,
+            "pauseAutoPlayOnHover" : true,
+            "prevNextButtons": false,
+            "contain" : true,
+            "adaptiveHeight" : true,
+            "dragThreshold" : 10,
+            "percentPosition": true,
+            "pageDots": true,
+            "rightToLeft": false,
+            "draggable": true,
+            "selectedAttraction": 0.1,
+            "parallax" : 0,
+            "friction": 0.6        }'>
+
+
+                                <div class="banner has-hover" id="banner-468532536">
+                                    <div class="banner-inner fill">
+                                        <div class="banner-bg fill">
+                                            <div class="bg fill bg-fill "></div>
+                                            <div class="overlay"></div>
+                                        </div><!-- bg-layers -->
+                                        <div class="banner-layers container">
+                                            <div class="fill banner-link"></div>
+                                            <div id="text-box-1204333051"
+                                                 class="text-box banner-layer x50 md-x50 lg-x50 y50 md-y50 lg-y50 res-text">
+                                                <div data-animate="fadeInDown">
+                                                    <div class="text ">
+
+                                                        <div class="text-inner text-center">
+
+                                                            <h3><strong>Spa Mona</strong></h3>
+                                                            <h2>KHÁM PHÁ THẾ GIỚI SPA</h2>
+                                                            <p>
+                                                                Chúng tôi hiểu rằng thư giãn thực sự là một hình thức
+                                                                nghệ thuật. Kết hợp một bài massage phù hợp với dịch vụ
+                                                                Chăm Sóc Da nói chung và Da Mặt nói riêng, hoặc các dịch
+                                                                vụ thẩm mỹ khác, khách hàng trở về nhà sẽ là một người
+                                                                hoàn toàn mới với phong cách sang trọng, làn da sáng
+                                                                khỏe mạnh, bàn tay đẹp đẽ, một tâm trí và cơ thể trẻ
+                                                                hóa!
+                                                            </p>
+                                                        </div>
+                                                    </div><!-- text-box-inner -->
+                                                </div>
+                                                <style scope="scope">
+                                                    #text-box-1204333051 {
+                                                        width: 90%;
+                                                    }
+
+                                                        #text-box-1204333051 .text {
+                                                            font-size: 100%;
+                                                        }
+
+
+                                                    @@media (min-width:550px) {
+
+                                                        #text-box-1204333051 {
+                                                            width: 70%;
+                                                        }
+                                                    }
+                                                </style>
+                                            </div><!-- text-box -->
+
+                                        </div><!-- .banner-layers -->
+                                    </div><!-- .banner-inner -->
+
+
+                                    <style scope="scope">
+                                        #banner-468532536 {
+                                            padding-top: 300px;
+                                        }
+
+                                            #banner-468532536 .bg.bg-loaded {
+                                                background-image: url(img/uploads/2019/06/slide-1.jpg);
+                                            }
+
+                                            #banner-468532536 .overlay {
+                                                background-color: rgba(255, 255, 255, 0.6);
+                                            }
+
+                                            #banner-468532536 .bg {
+                                                background-position: 0% 100%;
+                                            }
+
+
+                                        @@media (min-width:550px) {
+
+                                            #banner-468532536 {
+                                                padding-top: 650px;
+                                            }
+                                        }
+                                    </style>
+                                </div><!-- .banner -->
+
+
+
+                                <div class="banner has-hover" id="banner-1744763873">
+                                    <div class="banner-inner fill">
+                                        <div class="banner-bg fill">
+                                            <div class="bg fill bg-fill "></div>
+                                            <div class="overlay"></div>
+                                        </div><!-- bg-layers -->
+                                        <div class="banner-layers container">
+                                            <div class="fill banner-link"></div>
+                                            <div id="text-box-1498025024"
+                                                 class="text-box banner-layer x50 md-x50 lg-x50 y50 md-y50 lg-y50 res-text">
+                                                <div data-animate="fadeInDown">
+                                                    <div class="text ">
+
+                                                        <div class="text-inner text-center">
+
+                                                            <h3><strong>Spa Mona</strong></h3>
+                                                            <h2>KHÁM PHÁ THẾ GIỚI SPA</h2>
+                                                            <p>
+                                                                Chúng tôi hiểu rằng thư giãn thực sự là một hình thức
+                                                                nghệ thuật. Kết hợp một bài massage phù hợp với dịch vụ
+                                                                Chăm Sóc Da nói chung và Da Mặt nói riêng, hoặc các dịch
+                                                                vụ thẩm mỹ khác, khách hàng trở về nhà sẽ là một người
+                                                                hoàn toàn mới với phong cách sang trọng, làn da sáng
+                                                                khỏe mạnh, bàn tay đẹp đẽ, một tâm trí và cơ thể trẻ
+                                                                hóa!
+                                                            </p>
+                                                        </div>
+                                                    </div><!-- text-box-inner -->
+                                                </div>
+                                                <style scope="scope">
+                                                    #text-box-1498025024 {
+                                                        width: 90%;
+                                                    }
+
+                                                        #text-box-1498025024 .text {
+                                                            font-size: 100%;
+                                                        }
+
+
+                                                    @@media (min-width:550px) {
+
+                                                        #text-box-1498025024 {
+                                                            width: 70%;
+                                                        }
+                                                    }
+                                                </style>
+                                            </div><!-- text-box -->
+
+                                        </div><!-- .banner-layers -->
+                                    </div><!-- .banner-inner -->
+
+
+                                    <style scope="scope">
+                                        #banner-1744763873 {
+                                            padding-top: 300px;
+                                        }
+
+                                            #banner-1744763873 .bg.bg-loaded {
+                                                background-image: url(img/uploads/2019/06/slide-2.jpg);
+                                            }
+
+                                            #banner-1744763873 .overlay {
+                                                background-color: rgba(255, 255, 255, 0.6);
+                                            }
+
+                                            #banner-1744763873 .bg {
+                                                background-position: 0% 100%;
+                                            }
+
+
+                                        @@media (min-width:550px) {
+
+                                            #banner-1744763873 {
+                                                padding-top: 650px;
+                                            }
+                                        }
+                                    </style>
+                                </div><!-- .banner -->
+
+
+
+                                <div class="banner has-hover" id="banner-1009204611">
+                                    <div class="banner-inner fill">
+                                        <div class="banner-bg fill">
+                                            <div class="bg fill bg-fill "></div>
+                                            <div class="overlay"></div>
+                                        </div><!-- bg-layers -->
+                                        <div class="banner-layers container">
+                                            <div class="fill banner-link"></div>
+                                            <div id="text-box-57045434"
+                                                 class="text-box banner-layer x50 md-x95 lg-x100 y50 md-y50 lg-y50 res-text">
+                                                <div data-animate="fadeInDown">
+                                                    <div class="text ">
+
+                                                        <div class="text-inner text-right">
+
+                                                            <h3><strong>Spa Mona</strong></h3>
+                                                            <h2>KHÁM PHÁ THẾ GIỚI SPA</h2>
+                                                            <p>
+                                                                Chúng tôi hiểu rằng thư giãn thực sự là một hình thức
+                                                                nghệ thuật. Kết hợp một bài massage phù hợp với dịch vụ
+                                                                Chăm Sóc Da nói chung và Da Mặt nói riêng, hoặc các dịch
+                                                                vụ thẩm mỹ khác, khách hàng trở về nhà sẽ là một người
+                                                                hoàn toàn mới với phong cách sang trọng, làn da sáng
+                                                                khỏe mạnh, bàn tay đẹp đẽ, một tâm trí và cơ thể trẻ
+                                                                hóa!
+                                                            </p>
+                                                        </div>
+                                                    </div><!-- text-box-inner -->
+                                                </div>
+                                                <style scope="scope">
+                                                    #text-box-57045434 {
+                                                        width: 90%;
+                                                    }
+
+                                                        #text-box-57045434 .text {
+                                                            font-size: 100%;
+                                                        }
+
+
+                                                    @@media (min-width:550px) {
+
+                                                        #text-box-57045434 {
+                                                            width: 65%;
+                                                        }
+                                                    }
+
+
+                                                    @@media (min-width:850px) {
+
+                                                        #text-box-57045434 {
+                                                            width: 50%;
+                                                        }
+                                                    }
+                                                </style>
+                                            </div><!-- text-box -->
+
+                                        </div><!-- .banner-layers -->
+                                    </div><!-- .banner-inner -->
+
+
+                                    <style scope="scope">
+                                        #banner-1009204611 {
+                                            padding-top: 300px;
+                                        }
+
+                                            #banner-1009204611 .bg.bg-loaded {
+                                                background-image: url(img/uploads/2019/06/slide-3.jpg);
+                                            }
+
+                                            #banner-1009204611 .overlay {
+                                                background-color: rgba(255, 255, 255, 0.6);
+                                            }
+
+                                            #banner-1009204611 .bg {
+                                                background-position: 1% 0%;
+                                            }
+
+
+                                        @@media (min-width:550px) {
+
+                                            #banner-1009204611 {
+                                                padding-top: 650px;
+                                            }
+                                        }
+                                    </style>
+                                </div><!-- .banner -->
+
+
+                            </div>
+
+                            <div class="loading-spin dark large centered"></div>
+
+                            <style scope="scope">
+                            </style>
+                        </div><!-- .ux-slider-wrapper -->
+
+
+                    </div><!-- .section-content -->
+
+
+                    <style scope="scope">
+                        #section_1449386483 {
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                        }
+                    </style>
+                </section>
+
+                <section class="section sec_service_price has-parallax" id="section_226399569">
+                    <div class="bg section-bg fill bg-fill  " data-parallax-container=".section"
+                         data-parallax-background data-parallax="-6">
+
+
+                        <div class="section-bg-overlay absolute fill"></div>
+
+
+                    </div><!-- .section-bg -->
+
+                    <div class="section-content relative">
+
+                        <div class="row row-collapse align-middle align-center row-top" id="row-1587559796">
+                            <div class="col col-left medium-12 small-12 large-7" data-animate="fadeInLeft">
+                                <div class="col-inner">
+                                    <h3>Spa Mona</h3>
+                                    <h1>BẢNG GIÁ DỊCH VỤ</h1>
+                                    <div class="gap-element" style="display:block; height:auto; padding-top:20px"
+                                         class="clearfix"></div>
+                                    <div class="row row-collapse row-full-width align-middle" id="row-226615979">
+                                        <div class="col col-child medium-9 small-12 large-9">
+                                            <div class="col-inner">
+                                                <div class="icon-box testimonial-box icon-box-left text-left">
+                                                    <div class="icon-box-img testimonial-image circle"
+                                                         style="width: 100px">
+                                                        <img width="150" height="150"
+                                                             src="~/Content/img/uploads/2019/07/Procedure-11-150x150.jpg"
+                                                             class="attachment-thumbnail size-thumbnail" alt=""
+                                                             srcset="~/Content/img/uploads/2019/07/Procedure-11-150x150.jpg 150w, ~/Content/img/uploads/2019/07/Procedure-11-100x100.jpg 100w, ~/Content/img/uploads/2019/07/Procedure-11.jpg 205w"
+                                                             sizes="(max-width: 150px) 100vw, 150px" />
+                                                    </div>
+                                                    <div class="icon-box-text p-last-0">
+                                                        <div class="testimonial-text line-height-small italic test_text first-reset last-reset is-italic">
+
+                                                            <h2>Hot Stone Massage</h2>
+                                                            <p>20 phút Phục hồi da mặt</p>
+                                                            <h2 class="price-mobile">$30.00</h2>
+                                                        </div>
+                                                        <div class="testimonial-meta pt-half">
+                                                            <strong class="testimonial-name test_name"></strong>
+                                                            <span class="testimonial-company test_company"></span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .icon-box -->
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col col-child hide-for-small medium-3 small-12 large-3">
+                                            <div class="col-inner text-center">
+                                                <h2 class="price">$30.00</h2>
+                                            </div>
+                                        </div>
+
+                                        <style scope="scope">
+                                        </style>
+                                    </div>
+                                    <div class="gap-element" style="display:block; height:auto; padding-top:20px"
+                                         class="clearfix"></div>
+                                    <div class="row row-collapse row-full-width align-middle" id="row-496837981">
+                                        <div class="col col-child medium-9 small-12 large-9">
+                                            <div class="col-inner">
+                                                <div class="icon-box testimonial-box icon-box-left text-left">
+                                                    <div class="icon-box-img testimonial-image circle"
+                                                         style="width: 100px">
+                                                        <img width="150" height="150"
+                                                             src="wp-content/uploads/2019/07/Procedure-15-150x150.jpg"
+                                                             class="attachment-thumbnail size-thumbnail" alt=""
+                                                             srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/07/Procedure-15-150x150.jpg 150w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/07/Procedure-15-100x100.jpg 100w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/07/Procedure-15.jpg 205w"
+                                                             sizes="(max-width: 150px) 100vw, 150px" />
+                                                    </div>
+                                                    <div class="icon-box-text p-last-0">
+                                                        <div class="testimonial-text line-height-small italic test_text first-reset last-reset is-italic">
+
+                                                            <h2>Oriental Spa Manicure</h2>
+                                                            <p>20 phút Phục hồi da mặt</p>
+                                                            <h2 class="price-mobile">$30.00</h2>
+                                                        </div>
+                                                        <div class="testimonial-meta pt-half">
+                                                            <strong class="testimonial-name test_name"></strong>
+                                                            <span class="testimonial-company test_company"></span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .icon-box -->
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col col-child hide-for-small medium-3 small-12 large-3">
+                                            <div class="col-inner text-center">
+                                                <h2 class="price">$30.00</h2>
+                                            </div>
+                                        </div>
+
+                                        <style scope="scope">
+                                        </style>
+                                    </div>
+                                    <div class="gap-element" style="display:block; height:auto; padding-top:20px"
+                                         class="clearfix"></div>
+                                    <div class="row row-collapse row-full-width align-middle" id="row-712501080">
+                                        <div class="col col-child medium-9 small-12 large-9">
+                                            <div class="col-inner">
+                                                <div class="icon-box testimonial-box icon-box-left text-left">
+                                                    <div class="icon-box-img testimonial-image circle"
+                                                         style="width: 100px">
+                                                        <img width="150" height="150"
+                                                             src="wp-content/uploads/2019/07/Procedure-5-150x150.jpg"
+                                                             class="attachment-thumbnail size-thumbnail" alt=""
+                                                             srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/07/Procedure-5-150x150.jpg 150w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/07/Procedure-5-100x100.jpg 100w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/07/Procedure-5.jpg 205w"
+                                                             sizes="(max-width: 150px) 100vw, 150px" />
+                                                    </div>
+                                                    <div class="icon-box-text p-last-0">
+                                                        <div class="testimonial-text line-height-small italic test_text first-reset last-reset is-italic">
+
+                                                            <h2>Hot Stone Massage</h2>
+                                                            <p>20 phút Phục hồi da mặt</p>
+                                                            <h2 class="price-mobile">$30.00</h2>
+                                                        </div>
+                                                        <div class="testimonial-meta pt-half">
+                                                            <strong class="testimonial-name test_name"></strong>
+                                                            <span class="testimonial-company test_company"></span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .icon-box -->
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col col-child hide-for-small medium-3 small-12 large-3">
+                                            <div class="col-inner text-center">
+                                                <h2 class="price">$30.00</h2>
+                                            </div>
+                                        </div>
+
+                                        <style scope="scope">
+                                        </style>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-right medium-12 small-12 large-5" data-animate="fadeInRight">
+                                <div class="col-inner text-center">
+                                    <h3>Spa Mona</h3>
+                                    <h1>HÃY ĐỂ CHÚNG TÔI PHỤC VỤ BẠN</h1>
+                                    <a href="http://localhost/mona-spa/lien-he/" target="_self" class="button white">
+                                        <span>Đặt dịch vụ</span>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                            <style scope="scope">
+                            </style>
+                        </div>
+                        <div class="gap-element" style="display:block; height:auto; padding-top:30px" class="clearfix">
+                        </div>
+                        <div class="row" id="row-1687262367">
+                            <div class="col small-12 large-12">
+                                <div class="col-inner text-center">
+                                    <h1>
+                                        <span style="color: #5f5842;">
+                                            Hãy cho bản thân bạn, và làm trẻ hóa tâm trí &amp;
+                                            tâm hồn của bạn
+                                        </span>
+                                    </h1>
+                                    <div class="is-divider divider clearfix"
+                                         style="max-width:60px;height:1px;background-color:rgb(0, 0, 0);"></div>
+                                    <!-- .divider -->
+                                    <p>Nơi thiên nhiên gặp hạnh phúc</p>
+                                    <a href="http://localhost/mona-spa/dich-vu/" target="_self"
+                                       class="button white all-service">
+                                        <span>Khám phá tất cả dịch vụ</span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-collapse align-center row-bottom" id="row-675960521">
+                            <div class="col small-12 large-12" data-animate="fadeInUp">
+                                <div class="col-inner text-center" style="margin:0px 0px -40px 0px;">
+                                    <div class="row" id="row-494252185">
+                                        <div class="col medium-10 small-12 large-10">
+                                            <div class="col-inner text-center">
+                                                <h3>Spa Mona</h3>
+                                                <h1>DỊCH VỤ NỔI BẬT</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-large" id="row-788897454">
+                                        <div class="col medium-4 small-12 large-4" data-animate="flipInY">
+                                            <div class="col-inner">
+                                                <div class="icon-box testimonial-box icon-box-center text-center">
+                                                    <div class="icon-box-img testimonial-image circle"
+                                                         style="width: 165px">
+                                                        <img width="150" height="150"
+                                                             src="wp-content/uploads/2019/06/img1-150x150.jpg"
+                                                             class="attachment-thumbnail size-thumbnail" alt=""
+                                                             srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img1-150x150.jpg 150w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img1-100x100.jpg 100w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img1.jpg 200w"
+                                                             sizes="(max-width: 150px) 100vw, 150px" />
+                                                    </div>
+                                                    <div class="icon-box-text p-last-0">
+                                                        <div class="testimonial-text line-height-small italic test_text first-reset last-reset is-italic">
+
+                                                            <h2>1. Massage Therapy</h2>
+                                                            <p>
+                                                                Chúng tôi hiểu rằng thư giãn thực sự là một hình thức
+                                                                nghệ thuật. Kết hợp một bài massage phù hợp với dịch vụ
+                                                                Chăm Sóc Da nói chung và Da Mặt nói riêng, hoặc các dịch
+                                                                vụ thẩm mỹ khác
+                                                            </p>
+                                                        </div>
+                                                        <div class="testimonial-meta pt-half">
+                                                            <strong class="testimonial-name test_name"></strong>
+                                                            <span class="testimonial-company test_company"></span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .icon-box -->
+
+
+                                                <a href="http://localhost/mona-spa/dich-vu/" target="_self"
+                                                   class="button primary is-outline is-small">
+                                                    <span>Xem ngay</span>
+                                                    <i class="icon-angle-right"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col medium-4 small-12 large-4" data-animate="flipInY">
+                                            <div class="col-inner">
+                                                <div class="icon-box testimonial-box icon-box-center text-center">
+                                                    <div class="icon-box-img testimonial-image circle"
+                                                         style="width: 165px">
+                                                        <img width="150" height="150"
+                                                             src="wp-content/uploads/2019/06/img24-150x150.jpg"
+                                                             class="attachment-thumbnail size-thumbnail" alt=""
+                                                             srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img24-150x150.jpg 150w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img24-100x100.jpg 100w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img24.jpg 200w"
+                                                             sizes="(max-width: 150px) 100vw, 150px" />
+                                                    </div>
+                                                    <div class="icon-box-text p-last-0">
+                                                        <div class="testimonial-text line-height-small italic test_text first-reset last-reset is-italic">
+
+                                                            <h2>2. Skin Care</h2>
+                                                            <p>
+                                                                Chúng tôi hiểu rằng thư giãn thực sự là một hình thức
+                                                                nghệ thuật. Kết hợp một bài massage phù hợp với dịch vụ
+                                                                Chăm Sóc Da nói chung và Da Mặt nói riêng, hoặc các dịch
+                                                                vụ thẩm mỹ khác
+                                                            </p>
+                                                        </div>
+                                                        <div class="testimonial-meta pt-half">
+                                                            <strong class="testimonial-name test_name"></strong>
+                                                            <span class="testimonial-company test_company"></span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .icon-box -->
+
+
+                                                <a href="http://localhost/mona-spa/dich-vu/" target="_self"
+                                                   class="button primary is-outline is-small">
+                                                    <span>Xem ngay</span>
+                                                    <i class="icon-angle-right"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                        <div class="col medium-4 small-12 large-4" data-animate="flipInY">
+                                            <div class="col-inner">
+                                                <div class="icon-box testimonial-box icon-box-center text-center">
+                                                    <div class="icon-box-img testimonial-image circle"
+                                                         style="width: 165px">
+                                                        <img width="150" height="150"
+                                                             src="wp-content/uploads/2019/06/img25-150x150.jpg"
+                                                             class="attachment-thumbnail size-thumbnail" alt=""
+                                                             srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img25-150x150.jpg 150w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img25-100x100.jpg 100w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img25.jpg 200w"
+                                                             sizes="(max-width: 150px) 100vw, 150px" />
+                                                    </div>
+                                                    <div class="icon-box-text p-last-0">
+                                                        <div class="testimonial-text line-height-small italic test_text first-reset last-reset is-italic">
+
+                                                            <h2>3. Body Treatments</h2>
+                                                            <p>
+                                                                Chúng tôi hiểu rằng thư giãn thực sự là một hình thức
+                                                                nghệ thuật. Kết hợp một bài massage phù hợp với dịch vụ
+                                                                Chăm Sóc Da nói chung và Da Mặt nói riêng, hoặc các dịch
+                                                                vụ thẩm mỹ khác
+                                                            </p>
+                                                        </div>
+                                                        <div class="testimonial-meta pt-half">
+                                                            <strong class="testimonial-name test_name"></strong>
+                                                            <span class="testimonial-company test_company"></span>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .icon-box -->
+
+
+                                                <a href="http://localhost/mona-spa/dich-vu/" target="_self"
+                                                   class="button primary is-outline is-small">
+                                                    <span>Xem ngay</span>
+                                                    <i class="icon-angle-right"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <style scope="scope">
+                                        </style>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <style scope="scope">
+                            </style>
+                        </div>
+                    </div><!-- .section-content -->
+
+
+                    <style scope="scope">
+                        #section_226399569 {
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                        }
+
+                            #section_226399569 .section-bg-overlay {
+                                background-color: rgba(255, 255, 255, 0.6);
+                            }
+
+                            #section_226399569 .section-bg.bg-loaded {
+                                background-image: url(wp-content/uploads/2019/06/background-spa-png-6.jpg);
+                            }
+
+                            #section_226399569 .section-bg {
+                                background-position: 100% 0%;
+                            }
+
+
+                        @@media (min-width:550px) {
+
+                            #section_226399569 .section-bg-overlay {
+                                background-color: rgba(255, 255, 255, 0.6);
+                            }
+                        }
+
+
+                        @@media (min-width:850px) {
+
+                            #section_226399569 .section-bg-overlay {
+                                background-color: rgba(255, 255, 255, 0);
+                            }
+                        }
+                    </style>
+                </section>
+
+                <section class="section sec_reason" id="section_1629653983">
+                    <div class="bg section-bg fill bg-fill  bg-loaded">
+
+
+
+
+
+                    </div><!-- .section-bg -->
+
+                    <div class="section-content relative">
+
+                        <div class="gap-element" style="display:block; height:auto; padding-top:50px" class="clearfix">
+                        </div>
+                        <div class="row" id="row-1054356387">
+                            <div class="col small-12 large-12">
+                                <div class="col-inner text-center">
+                                    <h3>Spa Mona</h3>
+                                    <h1>HÃY ĐẾN VỚI SPA MONA</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="row-731169768">
+                            <div class="col medium-4 small-12 large-4" data-animate="fadeInDown">
+                                <div class="col-inner">
+
+                                    <div class="icon-box featured-box icon-box-center text-center">
+                                        <div class="icon-box-img" style="width: 55px">
+                                            <div class="icon">
+                                                <div class="icon-inner">
+                                                    <img width="55" height="55" src="wp-content/uploads/2019/06/ic1.png"
+                                                         class="attachment-medium size-medium" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="icon-box-text last-reset">
+
+                                            <h2 style="text-align: center;">Break from Routine</h2>
+                                            <div class="text-center">
+                                                <div class="is-divider divider clearfix"
+                                                     style="max-width:50px;height:1px;background-color:rgb(51, 51, 51);">
+                                                </div>
+                                            </div><!-- .divider -->
+                                            <p style="text-align: center;">
+                                                Cách tốt nhất để thư giãn hoàn toàn và giảm
+                                                căng thẳng cho chính mình.
+                                            </p>
+                                        </div>
+                                    </div><!-- .icon-box -->
+
+
+                                </div>
+                            </div>
+                            <div class="col medium-4 small-12 large-4" data-animate="fadeInDown">
+                                <div class="col-inner">
+
+                                    <div class="icon-box featured-box icon-box-center text-center">
+                                        <div class="icon-box-img" style="width: 55px">
+                                            <div class="icon">
+                                                <div class="icon-inner">
+                                                    <img width="55" height="55" src="wp-content/uploads/2019/06/ic6.png"
+                                                         class="attachment-medium size-medium" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="icon-box-text last-reset">
+
+                                            <h2 style="text-align: center;">Improves Blood Circulation</h2>
+                                            <div class="text-center">
+                                                <div class="is-divider divider clearfix"
+                                                     style="max-width:50px;height:1px;background-color:rgb(51, 51, 51);">
+                                                </div>
+                                            </div><!-- .divider -->
+                                            <p style="text-align: center;">
+                                                Cung cấp thêm oxy &amp; chất dinh dưỡng cho
+                                                các tế bào.
+                                            </p>
+                                        </div>
+                                    </div><!-- .icon-box -->
+
+
+                                </div>
+                            </div>
+                            <div class="col medium-4 small-12 large-4" data-animate="fadeInDown">
+                                <div class="col-inner">
+
+                                    <div class="icon-box featured-box icon-box-center text-center">
+                                        <div class="icon-box-img" style="width: 55px">
+                                            <div class="icon">
+                                                <div class="icon-inner">
+                                                    <img width="55" height="55" src="wp-content/uploads/2019/06/ic7.png"
+                                                         class="attachment-medium size-medium" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="icon-box-text last-reset">
+
+                                            <h2 style="text-align: center;">Deep Tissue Massage</h2>
+                                            <div class="text-center">
+                                                <div class="is-divider divider clearfix"
+                                                     style="max-width:50px;height:1px;background-color:rgb(51, 51, 51);">
+                                                </div>
+                                            </div><!-- .divider -->
+                                            <p style="text-align: center;">
+                                                Chuyên gia trị liệu làm giảm căng thẳng cơ
+                                                bắp và chuột rút.
+                                            </p>
+                                        </div>
+                                    </div><!-- .icon-box -->
+
+
+                                </div>
+                            </div>
+                            <div class="col medium-4 small-12 large-4" data-animate="fadeInDown">
+                                <div class="col-inner">
+
+                                    <div class="icon-box featured-box icon-box-center text-center">
+                                        <div class="icon-box-img" style="width: 55px">
+                                            <div class="icon">
+                                                <div class="icon-inner">
+                                                    <img width="55" height="55" src="wp-content/uploads/2019/06/ic8.png"
+                                                         class="attachment-medium size-medium" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="icon-box-text last-reset">
+
+                                            <h2 style="text-align: center;">Manage Chronic Conditions</h2>
+                                            <div class="text-center">
+                                                <div class="is-divider divider clearfix"
+                                                     style="max-width:50px;height:1px;background-color:rgb(51, 51, 51);">
+                                                </div>
+                                            </div><!-- .divider -->
+                                            <p style="text-align: center;">
+                                                Liệu pháp xoa bóp mang lại lợi ích vượt trội
+                                                cho việc kiểm soát cơn đau.
+                                            </p>
+                                        </div>
+                                    </div><!-- .icon-box -->
+
+
+                                </div>
+                            </div>
+                            <div class="col medium-4 small-12 large-4" data-animate="fadeInDown">
+                                <div class="col-inner">
+
+                                    <div class="icon-box featured-box icon-box-center text-center">
+                                        <div class="icon-box-img" style="width: 55px">
+                                            <div class="icon">
+                                                <div class="icon-inner">
+                                                    <img width="55" height="55" src="wp-content/uploads/2019/06/ic9.png"
+                                                         class="attachment-medium size-medium" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="icon-box-text last-reset">
+
+                                            <h2 style="text-align: center;">Body Mind &amp; Soul</h2>
+                                            <div class="text-center">
+                                                <div class="is-divider divider clearfix"
+                                                     style="max-width:50px;height:1px;background-color:rgb(51, 51, 51);">
+                                                </div>
+                                            </div><!-- .divider -->
+                                            <p style="text-align: center;">
+                                                Spa cải thiện cảm giác tốt và mang lại sự hài
+                                                hòa cho cơ thể, tâm trí và tâm hồn.
+                                            </p>
+                                        </div>
+                                    </div><!-- .icon-box -->
+
+
+                                </div>
+                            </div>
+                            <div class="col medium-4 small-12 large-4" data-animate="fadeInDown">
+                                <div class="col-inner">
+
+                                    <div class="icon-box featured-box icon-box-center text-center">
+                                        <div class="icon-box-img" style="width: 55px">
+                                            <div class="icon">
+                                                <div class="icon-inner">
+                                                    <img width="55" height="55"
+                                                         src="wp-content/uploads/2019/06/ic10.png"
+                                                         class="attachment-medium size-medium" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="icon-box-text last-reset">
+
+                                            <h2 style="text-align: center;">Keeping Fit &amp; Healthy</h2>
+                                            <div class="text-center">
+                                                <div class="is-divider divider clearfix"
+                                                     style="max-width:50px;height:1px;background-color:rgb(51, 51, 51);">
+                                                </div>
+                                            </div><!-- .divider -->
+                                            <p style="text-align: center;">
+                                                Spa giảm cân thêm để giữ cho cơ thể của bạn
+                                                trong hình dạng.
+                                            </p>
+                                        </div>
+                                    </div><!-- .icon-box -->
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap-element" style="display:block; height:auto; padding-top:30px" class="clearfix">
+                        </div>
+                    </div><!-- .section-content -->
+
+
+                    <style scope="scope">
+                        #section_1629653983 {
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                            background-color: rgb(242, 235, 214);
+                        }
+                    </style>
+                </section>
+
+                <section class="section sec_booking has-parallax" id="section_767029849">
+                    <div class="bg section-bg fill bg-fill  " data-parallax-container=".section"
+                         data-parallax-background data-parallax="-6">
+
+
+
+
+
+                    </div><!-- .section-bg -->
+
+                    <div class="section-content relative">
+
+                        <div class="gap-element" style="display:block; height:auto; padding-top:60px" class="clearfix">
+                        </div>
+                        <div class="row align-center" id="row-1709798129">
+                            <div class="col col-booking medium-7 small-11 large-5" data-animate="fadeInLeft">
+                                <div class="col-inner text-left">
+                                    <h1 style="text-align: center;">LIÊN HỆ ĐẶT DỊCH VỤ</h1>
+                                    <div role="form" class="wpcf7" id="wpcf7-f542-p16-o1" lang="vi" dir="ltr">
+                                        <div class="screen-reader-response"></div>
+                                        <form action="http://mauweb.monamedia.net/helenspa/#wpcf7-f542-p16-o1"
+                                              method="post" class="wpcf7-form" novalidate="novalidate">
+                                            <div style="display: none;">
+                                                <input type="hidden" name="_wpcf7" value="542" />
+                                                <input type="hidden" name="_wpcf7_version" value="5.0.5" />
+                                                <input type="hidden" name="_wpcf7_locale" value="vi" />
+                                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f542-p16-o1" />
+                                                <input type="hidden" name="_wpcf7_container_post" value="16" />
+                                            </div>
+                                            <div class="form-ct clear">
+                                                <div class="form-row">
+                                                    <label>Họ tên:</label><br />
+                                                    <span class="wpcf7-form-control-wrap text-name">
+                                                        <input type="text"
+                                                               name="text-name" value="" size="40"
+                                                               class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form_lien_he"
+                                                               id="text-name" aria-required="true"
+                                                               aria-invalid="false" />
+                                                    </span>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label>Số điện thoại:</label><br />
+                                                    <span class="wpcf7-form-control-wrap tel-contact">
+                                                        <input type="tel"
+                                                               name="tel-contact" value="" size="40"
+                                                               class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel form_lien_he"
+                                                               id="tel-contact" aria-required="true"
+                                                               aria-invalid="false" />
+                                                    </span>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label>Dịch vụ:</label><br />
+                                                    <span class="wpcf7-form-control-wrap menu-950">
+                                                        <select name="menu-950"
+                                                                class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                                                aria-required="true" aria-invalid="false">
+                                                            <option value="">---</option>
+                                                            <option value="Hot Stone Massage">Hot Stone Massage</option>
+                                                            <option value="Gem Stone Massage">Gem Stone Massage</option>
+                                                            <option value="Oriental Spa Manicure">
+                                                                Oriental Spa Manicure
+                                                            </option>
+                                                            <option value="Master Therapy Massage">
+                                                                Master Therapy
+                                                                Massage
+                                                            </option>
+                                                            <option value="Reflexology">Reflexology</option>
+                                                            <option value="Hot Poultice Massage">
+                                                                Hot Poultice Massage
+                                                            </option>
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label>Nhân viên:</label><br />
+                                                    <span class="wpcf7-form-control-wrap menu-950">
+                                                        <select name="menu-950"
+                                                                class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                                                                aria-required="true" aria-invalid="false">
+                                                            <option value="">---</option>
+                                                            <option value="Arimura Nozomi">Arimura Nozomi</option>
+                                                            <option value="Itou Mayuki">Itou Mayuki</option>
+                                                            <option value="Kawai Asuna">Kawai Asuna</option>
+                                                            <option value="Sakamichi Miru">Sakamichi Miru</option>
+                                                            <option value="Tadai Mahiro">Tadai Mahiro</option>
+                                                            <option value="Mana Sakura">Mana Sakura</option>
+                                                        </select>
+                                                    </span>
+                                                </div>
+                                                <div class="form-row">
+                                                    <label>Thời gian:</label><br />
+                                                    <span class="wpcf7-form-control-wrap date-150">
+                                                        <input type="date"
+                                                               name="date-150" value=""
+                                                               class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date"
+                                                               aria-required="true" aria-invalid="false" />
+                                                    </span>
+                                                </div>
+                                                <div class="form-row center-txt">
+                                                    <input type="submit" value="Gửi"
+                                                           class="wpcf7-form-control wpcf7-submit form_lien_he"
+                                                           id="bt-gui" />
+                                                </div>
+                                            </div>
+                                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <style scope="scope">
+                            </style>
+                        </div>
+                        <div class="gap-element" style="display:block; height:auto; padding-top:60px" class="clearfix">
+                        </div>
+                    </div><!-- .section-content -->
+
+
+                    <style scope="scope">
+                        #section_767029849 {
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                        }
+
+                            #section_767029849 .section-bg.bg-loaded {
+                                background-image: url(wp-content/uploads/2019/06/background_1.wide_.jpg);
+                            }
+                    </style>
+                </section>
+
+                <section class="section sec_care" id="section_2053182981">
+                    <div class="bg section-bg fill bg-fill  bg-loaded">
+
+
+
+
+
+                    </div><!-- .section-bg -->
+
+                    <div class="section-content relative">
+
+                        <div class="gap-element" style="display:block; height:auto; padding-top:50px" class="clearfix">
+                        </div>
+                        <div class="row" id="row-102638944">
+                            <div class="col small-12 large-12">
+                                <div class="col-inner text-center">
+                                    <h3>Spa Mona</h3>
+                                    <h1>TẬN HƯỞNG CHĂM SÓC ĐẶC BIỆT</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-collapse align-center" id="row-1174269171">
+                            <div class="col col-left medium-8 small-11 large-3" data-animate="fadeInLeft">
+                                <div class="col-inner text-center" style="background-color:rgb(255, 255, 255);">
+                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1123480075">
+                                        <div class="img-inner dark">
+                                            <img width="135" height="130" src="wp-content/uploads/2019/06/img4.png"
+                                                 class="attachment-original size-original" alt="" />
+                                        </div>
+
+                                        <style scope="scope">
+                                            #image_1123480075 {
+                                                width: 30%;
+                                            }
+
+
+                                            @@media (min-width:850px) {
+
+                                                #image_1123480075 {
+                                                    width: 50%;
+                                                }
+                                            }
+                                        </style>
+                                    </div>
+
+                                    <h2>PURE NATURAL BLISS</h2>
+                                    <p>Làm nhiều hơn những gì làm cho bạn hạnh phúc và nhớ chăm sóc bản thân!</p>
+                                </div>
+                            </div>
+                            <div class="col medium-8 small-11 large-5">
+                                <div class="col-inner">
+                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1408252236">
+                                        <div class="img-inner dark">
+                                            <img width="616" height="410" src="wp-content/uploads/2019/06/img2.jpg"
+                                                 class="attachment-original size-original" alt=""
+                                                 srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img2.jpg 616w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img2-300x200.jpg 300w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img2-600x399.jpg 600w"
+                                                 sizes="(max-width: 616px) 100vw, 616px" />
+                                        </div>
+
+                                        <style scope="scope">
+                                            #image_1408252236 {
+                                                width: 100%;
+                                            }
+                                        </style>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col col-right medium-8 small-11 large-3" data-animate="fadeInRight">
+                                <div class="col-inner" style="background-color:rgb(255, 255, 255);">
+                                    <h1>01</h1>
+                                    <h2>Swedish Massage</h2>
+                                    <p>
+                                        Sử dụng các nét dài mượt mà ngoài việc nhào, chuyển động tròn với các kỹ thuật ma
+                                        sát thường xuyên.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <style scope="scope">
+                            </style>
+                        </div>
+                        <div class="gap-element" style="display:block; height:auto; padding-top:40px" class="clearfix">
+                        </div>
+                        <div class="row row-collapse align-center" id="row-1105758167">
+                            <div class="col medium-8 small-11 large-5">
+                                <div class="col-inner">
+                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_697409885">
+                                        <div class="img-inner dark">
+                                            <img width="710" height="460" src="wp-content/uploads/2019/06/img3.jpg"
+                                                 class="attachment-original size-original" alt=""
+                                                 srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img3.jpg 710w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img3-300x194.jpg 300w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img3-600x389.jpg 600w"
+                                                 sizes="(max-width: 710px) 100vw, 710px" />
+                                        </div>
+
+                                        <style scope="scope">
+                                            #image_697409885 {
+                                                width: 100%;
+                                            }
+                                        </style>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col col-02 medium-8 small-11 large-3" data-animate="fadeInRight">
+                                <div class="col-inner" style="background-color:rgb(255, 255, 255);">
+                                    <h1>02</h1>
+                                    <h2>Thai Massage</h2>
+                                    <p>
+                                        Nó tổ chức các năng lượng của cơ thể trong sự liên kết. Các nhà trị liệu làm việc
+                                        trên các cơ, khớp và cơ thể.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col col-aloha medium-8 small-11 large-3" data-animate="fadeInRight">
+                                <div class="col-inner text-center" style="background-color:rgb(159, 222, 244);">
+                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_424435985">
+                                        <div class="img-inner dark">
+                                            <img width="307" height="400" src="wp-content/uploads/2019/06/img10.png"
+                                                 class="attachment-original size-original" alt=""
+                                                 srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img10.png 307w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/img10-230x300.png 230w"
+                                                 sizes="(max-width: 307px) 100vw, 307px" />
+                                        </div>
+
+                                        <style scope="scope">
+                                            #image_424435985 {
+                                                width: 50%;
+                                            }
+
+
+                                            @@media (min-width:850px) {
+
+                                                #image_424435985 {
+                                                    width: 83%;
+                                                }
+                                            }
+                                        </style>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <style scope="scope">
+                            </style>
+                        </div>
+                        <div class="gap-element" style="display:block; height:auto; padding-top:50px" class="clearfix">
+                        </div>
+                    </div><!-- .section-content -->
+
+
+                    <style scope="scope">
+                        #section_2053182981 {
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                            background-color: rgb(247, 246, 237);
+                        }
+                    </style>
+                </section>
+
+                <section class="section sec_package" id="section_1153752247">
+                    <div class="bg section-bg fill bg-fill  bg-loaded">
+
+
+
+
+
+                    </div><!-- .section-bg -->
+
+                    <div class="section-content relative">
+
+                        <div class="gap-element" style="display:block; height:auto; padding-top:50px" class="clearfix">
+                        </div>
+                        <div class="row" id="row-223347634">
+                            <div class="col small-12 large-12">
+                                <div class="col-inner text-center">
+                                    <h3>Spa Mona</h3>
+                                    <h1>GÓI DỊCH VỤ SPA</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-small align-center" id="row-673984641">
+                            <div class="col medium-6 small-12 large-4">
+                                <div class="col-inner">
+
+                                    <div class="banner has-hover foot-spa" id="banner-917520623">
+                                        <div class="banner-inner fill">
+                                            <div class="banner-bg fill">
+                                                <div class="bg fill bg-fill "></div>
+
+                                            </div><!-- bg-layers -->
+                                            <div class="banner-layers container">
+                                                <div class="fill banner-link"></div>
+                                                <div id="text-box-1182755477"
+                                                     class="text-box banner-layer text-box-circle x5 md-x5 lg-x5 y95 md-y95 lg-y95 res-text">
+                                                    <div class="text dark">
+
+                                                        <div class="text-inner text-center">
+
+                                                            <h4><strong>GIÁ GÓI</strong></h4>
+                                                            <div class="text-center">
+                                                                <div class="is-divider divider clearfix"
+                                                                     style="margin-top:0.5em;margin-bottom:0.5em;height:1px;background-color:rgb(255, 255, 255);">
+                                                                </div>
+                                                            </div><!-- .divider -->
+                                                            <h3>$19.00</h3>
+                                                        </div>
+                                                    </div><!-- text-box-inner -->
+
+                                                    <style scope="scope">
+                                                        #text-box-1182755477 .text {
+                                                            background-color: rgb(159, 204, 165);
+                                                            font-size: 100%;
+                                                        }
+
+                                                        #text-box-1182755477 .text-inner {
+                                                            padding: 0 0px 0px 0px;
+                                                        }
+
+                                                        #text-box-1182755477 {
+                                                            width: 35%;
+                                                        }
+
+
+                                                        @@media (min-width:550px) {
+
+                                                            #text-box-1182755477 {
+                                                                width: 25%;
+                                                            }
+                                                        }
+                                                    </style>
+                                                </div><!-- text-box -->
+
+                                            </div><!-- .banner-layers -->
+                                        </div><!-- .banner-inner -->
+
+
+                                        <style scope="scope">
+                                            #banner-917520623 {
+                                                padding-top: 400px;
+                                            }
+
+                                                #banner-917520623 .bg.bg-loaded {
+                                                    background-image: url(img/uploads/2019/06/Imag1.jpg);
+                                                }
+                                        </style>
+                                    </div><!-- .banner -->
+
+
+                                </div>
+                            </div>
+                            <div class="col col-green medium-4 small-12 large-2" data-animate="fadeInRight">
+                                <div class="col-inner text-center" style="background-color:rgb(159, 204, 165);">
+                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1185692827">
+                                        <div class="img-inner dark">
+                                            <img width="146" height="110" src="wp-content/uploads/2019/06/img6.png"
+                                                 class="attachment-original size-original" alt="" />
+                                        </div>
+
+                                        <style scope="scope">
+                                            #image_1185692827 {
+                                                width: 50%;
+                                            }
+
+
+                                            @@media (min-width:550px) {
+
+                                                #image_1185692827 {
+                                                    width: 70%;
+                                                }
+                                            }
+                                        </style>
+                                    </div>
+
+                                    <h2>Foot Spa</h2>
+                                    <p>Một ngày ở Spa là những gì tôi gọi là Thiên đường trên Trái đất!</p>
+                                    <a href="http://localhost/mona-spa/dich-vu/" target="_self" class="button white">
+                                        <span>Mua ngay</span>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col medium-6 small-12 large-4">
+                                <div class="col-inner">
+
+                                    <div class="banner has-hover foot-spa" id="banner-193929821">
+                                        <div class="banner-inner fill">
+                                            <div class="banner-bg fill">
+                                                <div class="bg fill bg-fill "></div>
+
+                                            </div><!-- bg-layers -->
+                                            <div class="banner-layers container">
+                                                <div class="fill banner-link"></div>
+                                                <div id="text-box-387440665"
+                                                     class="text-box banner-layer text-box-circle x5 md-x5 lg-x5 y95 md-y95 lg-y95 res-text">
+                                                    <div class="text dark">
+
+                                                        <div class="text-inner text-center">
+
+                                                            <h4><strong>GIÁ GÓI</strong></h4>
+                                                            <div class="text-center">
+                                                                <div class="is-divider divider clearfix"
+                                                                     style="margin-top:0.5em;margin-bottom:0.5em;height:1px;background-color:rgb(255, 255, 255);">
+                                                                </div>
+                                                            </div><!-- .divider -->
+                                                            <h3>$19.00</h3>
+                                                        </div>
+                                                    </div><!-- text-box-inner -->
+
+                                                    <style scope="scope">
+                                                        #text-box-387440665 .text {
+                                                            background-color: rgb(255, 193, 116);
+                                                            font-size: 100%;
+                                                        }
+
+                                                        #text-box-387440665 .text-inner {
+                                                            padding: 0 0px 0px 0px;
+                                                        }
+
+                                                        #text-box-387440665 {
+                                                            width: 35%;
+                                                        }
+
+
+                                                        @@media (min-width:550px) {
+
+                                                            #text-box-387440665 {
+                                                                width: 25%;
+                                                            }
+                                                        }
+                                                    </style>
+                                                </div><!-- text-box -->
+
+                                            </div><!-- .banner-layers -->
+                                        </div><!-- .banner-inner -->
+
+
+                                        <style scope="scope">
+                                            #banner-193929821 {
+                                                padding-top: 400px;
+                                            }
+
+                                                #banner-193929821 .bg.bg-loaded {
+                                                    background-image: url(img/uploads/2019/06/img5.jpg);
+                                                }
+                                        </style>
+                                    </div><!-- .banner -->
+
+
+                                </div>
+                            </div>
+                            <div class="col col-orange medium-4 small-12 large-2" data-animate="fadeInRight">
+                                <div class="col-inner text-center" style="background-color:rgb(255, 193, 116);">
+                                    <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1193789598">
+                                        <div class="img-inner dark">
+                                            <img width="137" height="110" src="wp-content/uploads/2019/06/img7.png"
+                                                 class="attachment-original size-original" alt="" />
+                                        </div>
+
+                                        <style scope="scope">
+                                            #image_1193789598 {
+                                                width: 50%;
+                                            }
+
+
+                                            @@media (min-width:550px) {
+
+                                                #image_1193789598 {
+                                                    width: 70%;
+                                                }
+                                            }
+                                        </style>
+                                    </div>
+
+                                    <h2>Herbal Skin Care</h2>
+                                    <p>Giữ bình tĩnh và đến Spa để thư giãn và thư giãn</p>
+                                    <a href="http://localhost/mona-spa/dich-vu/" target="_self" class="button white">
+                                        <span>Mua ngay</span>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                            <style scope="scope">
+                            </style>
+                        </div>
+                        <div class="gap-element" style="display:block; height:auto; padding-top:50px" class="clearfix">
+                        </div>
+                    </div><!-- .section-content -->
+
+
+                    <style scope="scope">
+                        #section_1153752247 {
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                            background-color: rgb(247, 246, 237);
+                        }
+                    </style>
+                </section>
+
+                <section class="section sec_blog" id="section_1194137796">
+                    <div class="bg section-bg fill bg-fill  bg-loaded">
+
+
+
+
+
+                    </div><!-- .section-bg -->
+
+                    <div class="section-content relative">
+
+                        <div class="gap-element" style="display:block; height:auto; padding-top:50px" class="clearfix">
+                        </div>
+                        <div class="row" id="row-1958080148">
+                            <div class="col small-12 large-12">
+                                <div class="col-inner text-center">
+                                    <h3>Spa Mona</h3>
+                                    <h1>BLOGS</h1>
+                                    <div class="gap-element" style="display:block; height:auto; padding-top:30px"
+                                         class="clearfix"></div>
+
+
+                                    <div class="row large-columns-3 medium-columns-2 small-columns-1 slider row-slider slider-nav-simple slider-nav-outside slider-nav-push"
+                                         data-flickity-options='{"imagesLoaded": true, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": true,"prevNextButtons": true,"percentPosition": true,"pageDots": false, "rightToLeft": false, "autoPlay" : false}'>
+
+                                        <div class="col post-item">
+                                            <div class="col-inner">
+                                                <a href="5-tieu-chi-lua-chon-phan-mem-quan-ly-spa-hieu-qua/index.html"
+                                                   class="plain">
+                                                    <div class="box box-normal box-text-bottom box-blog-post has-hover">
+                                                        <div class="box-image">
+                                                            <div class="image-cover" style="padding-top:56.25%;">
+                                                                <img width="4096" height="2730"
+                                                                     src="wp-content/uploads/2019/06/slide-1.jpg"
+                                                                     class="attachment-original size-original wp-post-image"
+                                                                     alt=""
+                                                                     srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-1.jpg 4096w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-1-300x200.jpg 300w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-1-768x512.jpg 768w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-1-1024x683.jpg 1024w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-1-600x400.jpg 600w"
+                                                                     sizes="(max-width: 4096px) 100vw, 4096px" />
+                                                            </div>
+                                                        </div><!-- .box-image -->
+                                                        <div class="box-text text-left">
+                                                            <div class="box-text-inner blog-post-inner">
+
+
+                                                                <h5 class="post-title is-large ">
+                                                                    5 tiêu chí lựa chọn
+                                                                    phần mềm quản lý Spa hiệu quả
+                                                                </h5>
+                                                                <div class="is-divider"></div>
+                                                                <p class="from_the_blog_excerpt ">
+                                                                    Hiện nay trên thị
+                                                                    trường có rất nhiều đơn vị cung cấp phần mềm quản lý
+                                                                    Spa. Hầu hết đều cố gắng quảng cáo sản phẩm của mình
+                                                                    một cách ...
+                                                                </p>
+
+
+
+                                                            </div><!-- .box-text-inner -->
+                                                        </div><!-- .box-text -->
+                                                    </div><!-- .box -->
+                                                </a><!-- .link -->
+                                            </div><!-- .col-inner -->
+                                        </div><!-- .col -->
+                                        <div class="col post-item">
+                                            <div class="col-inner">
+                                                <a href="2-ly-do-ban-nen-chon-cho-spa-cua-minh-mot-thiet-ke-dep-va-khac-biet/index.html"
+                                                   class="plain">
+                                                    <div class="box box-normal box-text-bottom box-blog-post has-hover">
+                                                        <div class="box-image">
+                                                            <div class="image-cover" style="padding-top:56.25%;">
+                                                                <img width="900" height="511"
+                                                                     src="wp-content/uploads/2019/06/blog-4.jpg"
+                                                                     class="attachment-original size-original wp-post-image"
+                                                                     alt=""
+                                                                     srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/blog-4.jpg 900w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/blog-4-300x170.jpg 300w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/blog-4-768x436.jpg 768w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/blog-4-600x341.jpg 600w"
+                                                                     sizes="(max-width: 900px) 100vw, 900px" />
+                                                            </div>
+                                                        </div><!-- .box-image -->
+                                                        <div class="box-text text-left">
+                                                            <div class="box-text-inner blog-post-inner">
+
+
+                                                                <h5 class="post-title is-large ">
+                                                                    2 lý do bạn nên chọn
+                                                                    cho Spa của mình một thiết kế đẹp và khác biệt
+                                                                </h5>
+                                                                <div class="is-divider"></div>
+                                                                <p class="from_the_blog_excerpt ">
+                                                                    Hiện nay, lĩnh vực
+                                                                    kinh doanh Spa được xem là một ngành dịch vụ khá đặc
+                                                                    thù và đang phát triển không ngừng. Vì vậy, việc
+                                                                    phải cạnh tranh khốc ...
+                                                                </p>
+
+
+
+                                                            </div><!-- .box-text-inner -->
+                                                        </div><!-- .box-text -->
+                                                    </div><!-- .box -->
+                                                </a><!-- .link -->
+                                            </div><!-- .col-inner -->
+                                        </div><!-- .col -->
+                                        <div class="col post-item">
+                                            <div class="col-inner">
+                                                <a href="kinh-doanh-spa-thach-thuc-va-co-hoi-voi-nguoi-moi/index.html"
+                                                   class="plain">
+                                                    <div class="box box-normal box-text-bottom box-blog-post has-hover">
+                                                        <div class="box-image">
+                                                            <div class="image-cover" style="padding-top:56.25%;">
+                                                                <img width="1920" height="975"
+                                                                     src="wp-content/uploads/2019/06/slide-2.jpg"
+                                                                     class="attachment-original size-original wp-post-image"
+                                                                     alt=""
+                                                                     srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-2.jpg 1920w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-2-300x152.jpg 300w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-2-768x390.jpg 768w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-2-1024x520.jpg 1024w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-2-600x305.jpg 600w"
+                                                                     sizes="(max-width: 1920px) 100vw, 1920px" />
+                                                            </div>
+                                                        </div><!-- .box-image -->
+                                                        <div class="box-text text-left">
+                                                            <div class="box-text-inner blog-post-inner">
+
+
+                                                                <h5 class="post-title is-large ">
+                                                                    Kinh doanh Spa &#8211;
+                                                                    Thách thức và cơ hội với người mới
+                                                                </h5>
+                                                                <div class="is-divider"></div>
+                                                                <p class="from_the_blog_excerpt ">
+                                                                    Tại Việt Nam, càng
+                                                                    ngày xu hướng kinh doanh Spa dần trở thành một lĩnh
+                                                                    vực thời thượng với rất nhiều Spa và Beauty salon
+                                                                    xuất hiện tại các thành ...
+                                                                </p>
+
+
+
+                                                            </div><!-- .box-text-inner -->
+                                                        </div><!-- .box-text -->
+                                                    </div><!-- .box -->
+                                                </a><!-- .link -->
+                                            </div><!-- .col-inner -->
+                                        </div><!-- .col -->
+                                        <div class="col post-item">
+                                            <div class="col-inner">
+                                                <a href="quan-ly-spa-the-nao-la-hieu-qua/index.html" class="plain">
+                                                    <div class="box box-normal box-text-bottom box-blog-post has-hover">
+                                                        <div class="box-image">
+                                                            <div class="image-cover" style="padding-top:56.25%;">
+                                                                <img width="600" height="400"
+                                                                     src="wp-content/uploads/2019/06/blog-2.jpg"
+                                                                     class="attachment-original size-original wp-post-image"
+                                                                     alt=""
+                                                                     srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/blog-2.jpg 600w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/blog-2-300x200.jpg 300w"
+                                                                     sizes="(max-width: 600px) 100vw, 600px" />
+                                                            </div>
+                                                        </div><!-- .box-image -->
+                                                        <div class="box-text text-left">
+                                                            <div class="box-text-inner blog-post-inner">
+
+
+                                                                <h5 class="post-title is-large ">
+                                                                    Quản lý Spa thế nào là
+                                                                    hiệu quả
+                                                                </h5>
+                                                                <div class="is-divider"></div>
+                                                                <p class="from_the_blog_excerpt ">
+                                                                    Tôi đã nghĩ đến những
+                                                                    vấn đề có thể nảy sinh giữa nhân viên và khách hàng
+                                                                    sau khi tôi đọc một thống kê chỉ ra rằng: cứ 3 người
+                                                                    ...
+                                                                </p>
+
+
+
+                                                            </div><!-- .box-text-inner -->
+                                                        </div><!-- .box-text -->
+                                                    </div><!-- .box -->
+                                                </a><!-- .link -->
+                                            </div><!-- .col-inner -->
+                                        </div><!-- .col -->
+                                        <div class="col post-item">
+                                            <div class="col-inner">
+                                                <a href="5-yeu-to-can-thiet-de-kinh-doanh-spa-thanh-cong/index.html"
+                                                   class="plain">
+                                                    <div class="box box-normal box-text-bottom box-blog-post has-hover">
+                                                        <div class="box-image">
+                                                            <div class="image-cover" style="padding-top:56.25%;">
+                                                                <img width="640" height="427"
+                                                                     src="wp-content/uploads/2019/06/blog-1.jpg"
+                                                                     class="attachment-original size-original wp-post-image"
+                                                                     alt=""
+                                                                     srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/blog-1.jpg 640w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/blog-1-300x200.jpg 300w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/blog-1-600x400.jpg 600w"
+                                                                     sizes="(max-width: 640px) 100vw, 640px" />
+                                                            </div>
+                                                        </div><!-- .box-image -->
+                                                        <div class="box-text text-left">
+                                                            <div class="box-text-inner blog-post-inner">
+
+
+                                                                <h5 class="post-title is-large ">
+                                                                    5 yếu tố cần thiết để
+                                                                    kinh doanh Spa thành công
+                                                                </h5>
+                                                                <div class="is-divider"></div>
+                                                                <p class="from_the_blog_excerpt ">
+                                                                    Để mở Spa, ngoài việc
+                                                                    phải có một lượng vốn đầu tư không nhỏ, người mở Spa
+                                                                    còn phải trang bị cho mình những kiến thức và hiểu
+                                                                    biết sâu ...
+                                                                </p>
+
+
+
+                                                            </div><!-- .box-text-inner -->
+                                                        </div><!-- .box-text -->
+                                                    </div><!-- .box -->
+                                                </a><!-- .link -->
+                                            </div><!-- .col-inner -->
+                                        </div><!-- .col -->
+                                        <div class="col post-item">
+                                            <div class="col-inner">
+                                                <a href="duis-luctus-elit-nisi-et-cursus-magna-pellentesque-non/index.html"
+                                                   class="plain">
+                                                    <div class="box box-normal box-text-bottom box-blog-post has-hover">
+                                                        <div class="box-image">
+                                                            <div class="image-cover" style="padding-top:56.25%;">
+                                                                <img width="1200" height="630"
+                                                                     src="wp-content/uploads/2018/03/banner4-1200x630.jpg"
+                                                                     class="attachment-original size-original wp-post-image"
+                                                                     alt=""
+                                                                     srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner4-1200x630.jpg 1200w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner4-1200x630-300x158.jpg 300w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner4-1200x630-768x403.jpg 768w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner4-1200x630-1024x538.jpg 1024w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner4-1200x630-24x13.jpg 24w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner4-1200x630-36x19.jpg 36w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner4-1200x630-48x25.jpg 48w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner4-1200x630-600x315.jpg 600w"
+                                                                     sizes="(max-width: 1200px) 100vw, 1200px" />
+                                                            </div>
+                                                        </div><!-- .box-image -->
+                                                        <div class="box-text text-left">
+                                                            <div class="box-text-inner blog-post-inner">
+
+
+                                                                <h5 class="post-title is-large ">
+                                                                    Duis luctus elit nisi,
+                                                                    et cursus magna pellentesque non.
+                                                                </h5>
+                                                                <div class="is-divider"></div>
+                                                                <p class="from_the_blog_excerpt ">
+                                                                    Lorem ipsum dolor sit
+                                                                    amet, consectetur adipiscing elit. Sed dapibus,
+                                                                    massa non viverra consequat, tellus ligula
+                                                                    scelerisque nisi, at viverra erat risus ut orci.
+                                                                    Morbi odio lacus, pellentesque ut tincidunt ...
+                                                                </p>
+
+
+
+                                                            </div><!-- .box-text-inner -->
+                                                        </div><!-- .box-text -->
+                                                    </div><!-- .box -->
+                                                </a><!-- .link -->
+                                            </div><!-- .col-inner -->
+                                        </div><!-- .col -->
+                                        <div class="col post-item">
+                                            <div class="col-inner">
+                                                <a href="mauris-tristique-pretium-tempus-vestibulum-et-accumsan-magna/index.html"
+                                                   class="plain">
+                                                    <div class="box box-normal box-text-bottom box-blog-post has-hover">
+                                                        <div class="box-image">
+                                                            <div class="image-cover" style="padding-top:56.25%;">
+                                                                <img width="1200" height="630"
+                                                                     src="wp-content/uploads/2018/03/banner-1200x630.jpg"
+                                                                     class="attachment-original size-original wp-post-image"
+                                                                     alt=""
+                                                                     srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner-1200x630.jpg 1200w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner-1200x630-300x158.jpg 300w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner-1200x630-768x403.jpg 768w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner-1200x630-1024x538.jpg 1024w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner-1200x630-24x13.jpg 24w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner-1200x630-36x19.jpg 36w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner-1200x630-48x25.jpg 48w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner-1200x630-600x315.jpg 600w"
+                                                                     sizes="(max-width: 1200px) 100vw, 1200px" />
+                                                            </div>
+                                                        </div><!-- .box-image -->
+                                                        <div class="box-text text-left">
+                                                            <div class="box-text-inner blog-post-inner">
+
+
+                                                                <h5 class="post-title is-large ">
+                                                                    Mauris tristique
+                                                                    pretium tempus. Vestibulum et accumsan magna.
+                                                                </h5>
+                                                                <div class="is-divider"></div>
+                                                                <p class="from_the_blog_excerpt ">
+                                                                    Donec tempus eu ligula
+                                                                    sed blandit. Vivamus vel enim ac quam iaculis
+                                                                    rutrum. Sed nisi massa, ultrices sed pretium et,
+                                                                    varius et massa. Maecenas maximus ligula ante, at
+                                                                    vulputate arcu ...
+                                                                </p>
+
+
+
+                                                            </div><!-- .box-text-inner -->
+                                                        </div><!-- .box-text -->
+                                                    </div><!-- .box -->
+                                                </a><!-- .link -->
+                                            </div><!-- .col-inner -->
+                                        </div><!-- .col -->
+                                        <div class="col post-item">
+                                            <div class="col-inner">
+                                                <a href="aliquam-placerat-nisl-nec-imperdiet-vehicula-phasellus-tempus-ligula-id-orci-finibus-feugiat/index.html"
+                                                   class="plain">
+                                                    <div class="box box-normal box-text-bottom box-blog-post has-hover">
+                                                        <div class="box-image">
+                                                            <div class="image-cover" style="padding-top:56.25%;">
+                                                                <img width="1200" height="630"
+                                                                     src="wp-content/uploads/2018/03/banner2-1200x630.jpg"
+                                                                     class="attachment-original size-original wp-post-image"
+                                                                     alt=""
+                                                                     srcset="http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner2-1200x630.jpg 1200w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner2-1200x630-300x158.jpg 300w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner2-1200x630-768x403.jpg 768w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner2-1200x630-1024x538.jpg 1024w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner2-1200x630-24x13.jpg 24w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner2-1200x630-36x19.jpg 36w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner2-1200x630-48x25.jpg 48w, http://mauweb.monamedia.net/helenspa/wp-content/uploads/2018/03/banner2-1200x630-600x315.jpg 600w"
+                                                                     sizes="(max-width: 1200px) 100vw, 1200px" />
+                                                            </div>
+                                                        </div><!-- .box-image -->
+                                                        <div class="box-text text-left">
+                                                            <div class="box-text-inner blog-post-inner">
+
+
+                                                                <h5 class="post-title is-large ">
+                                                                    Aliquam placerat nisl
+                                                                    nec imperdiet vehicula. Phasellus tempus ligula id
+                                                                    orci finibus feugiat.
+                                                                </h5>
+                                                                <div class="is-divider"></div>
+                                                                <p class="from_the_blog_excerpt ">
+                                                                    n rutrum tempus purus,
+                                                                    ut euismod dui facilisis ac. Fusce semper dignissim
+                                                                    diam a egestas. Aenean euismod mauris quis velit
+                                                                    ullamcorper, nec interdum leo pellentesque. Fusce
+                                                                    quis est eu est ...
+                                                                </p>
+
+
+
+                                                            </div><!-- .box-text-inner -->
+                                                        </div><!-- .box-text -->
+                                                    </div><!-- .box -->
+                                                </a><!-- .link -->
+                                            </div><!-- .col-inner -->
+                                        </div><!-- .col -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gap-element" style="display:block; height:auto; padding-top:20px" class="clearfix">
+                        </div>
+
+                    </div><!-- .section-content -->
+
+
+                    <style scope="scope">
+                        #section_1194137796 {
+                            padding-top: 0px;
+                            padding-bottom: 0px;
+                            background-color: rgb(247, 246, 237);
+                        }
+                    </style>
+                </section>
+
+
+                @RenderBody()
+            </div>
+
+
+
+        </main><!-- #main -->
+
+        <footer id="footer" class="footer-wrapper">
+
+            <section class="section sec_footer" id="section_1113914175">
+                <div class="bg section-bg fill bg-fill  bg-loaded">
+
+
+
+
+
+                </div><!-- .section-bg -->
+
+                <div class="section-content relative">
+
+
+                    <div class="gap-element" style="display:block; height:auto; padding-top:50px" class="clearfix">
+                    </div>
+
+                    <div class="row align-middle align-center row-top" id="row-247460819">
+
+                        <div class="col medium-11 small-12 large-10" data-animate="fadeInDown">
+                            <div class="col-inner" style="background-color:rgb(255, 255, 255);">
+
+                                <div class="row align-middle" id="row-1873901898">
+
+                                    <div class="col col-6-left medium-6 small-12 large-6">
+                                        <div class="col-inner text-center">
+
+                                            <p>Nhận thông tin mới nhất về <b>Ưu đãi &amp; Khuyến mãi</b></p>
+                                            <div class="gap-element"
+                                                 style="display:block; height:auto; padding-top:20px" class="clearfix">
+                                            </div>
+
+                                            <div role="form" class="wpcf7" id="wpcf7-f88-o2" lang="vi" dir="ltr">
+                                                <div class="screen-reader-response"></div>
+                                                <form action="http://mauweb.monamedia.net/helenspa/#wpcf7-f88-o2"
+                                                      method="post" class="wpcf7-form" novalidate="novalidate">
+                                                    <div style="display: none;">
+                                                        <input type="hidden" name="_wpcf7" value="88" />
+                                                        <input type="hidden" name="_wpcf7_version" value="5.0.5" />
+                                                        <input type="hidden" name="_wpcf7_locale" value="vi" />
+                                                        <input type="hidden" name="_wpcf7_unit_tag"
+                                                               value="wpcf7-f88-o2" />
+                                                        <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                                    </div>
+                                                    <p>
+                                                        <span class="wpcf7-form-control-wrap email-dang-ky">
+                                                            <input type="email" name="email-dang-ky" value="" size="40"
+                                                                   class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email form_dang_ky"
+                                                                   id="email-dang-ky" aria-required="true"
+                                                                   aria-invalid="false"
+                                                                   placeholder="Email ..." />
+                                                        </span><br />
+                                                        <input type="submit" value="Đăng ký"
+                                                               class="wpcf7-form-control wpcf7-submit form_dang_ky"
+                                                               id="btn-gui" />
+                                                    </p>
+                                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                                </form>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="col col-6-right medium-6 small-12 large-6">
+                                        <div class="col-inner text-center">
+
+                                            <p>Có bất kỳ câu hỏi nào? Cần một cuộc hẹn? hãy gọi cho chúng tôi</p>
+                                            <h4>1900 636 648</h4>
+                                            <p class="hotline">
+                                                (Bấm 109 - Phòng kinh doanh<br />
+                                                Bấm 103 - Phòng kỹ thuật)
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+
+                                    <style scope="scope">
+                                    </style>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <style scope="scope">
+                        </style>
+                    </div>
+                    <div class="gap-element" style="display:block; height:auto; padding-top:50px" class="clearfix">
+                    </div>
+
+                    <div class="row align-center row-bottom" id="row-1360520736">
+
+                        <div class="col medium-6 small-12 large-6">
+                            <div class="col-inner">
+
+                                <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_978740106">
+                                    <div class="img-inner dark">
+                                        <img width="216" height="64"
+                                             src="wp-content/uploads/2019/06/footer-logo-mona.png"
+                                             class="attachment-large size-large" alt="" />
+                                    </div>
+
+                                    <style scope="scope">
+                                        #image_978740106 {
+                                            width: 70%;
+                                        }
+
+
+                                        @@media (min-width:550px) {
+
+                                            #image_978740106 {
+                                                width: 60%;
+                                            }
+                                        }
+
+
+                                        @@media (min-width:850px) {
+
+                                            #image_978740106 {
+                                                width: 40%;
+                                            }
+                                        }
+                                    </style>
+                                </div>
+
+
+                                <p>
+                                    Hãy chăm sóc cơ thể của bạn, nơi duy nhất bạn phải sống! Đó là một ngôi đền sống. Hãy
+                                    tôn trọng nó, chăm sóc nó và tận hưởng cuộc sống của bạn để phát huy hết khả năng
+                                    của nó ... Mona Spa chỉ giúp bạn làm điều đó!
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="col medium-6 small-12 large-6">
+                            <div class="col-inner text-right">
+
+                                <h2>THÔNG TIN LIÊN HỆ</h2>
+                                <div class="is-divider divider clearfix"
+                                     style="margin-top:1.5em;margin-bottom:1.5em;max-width:40px;background-color:rgb(177, 166, 132);">
+                                </div><!-- .divider -->
+
+                                <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                                <p><a href="tel:0769220162">076 922 0162</a></p>
+                                <p>
+                                    <a href="http://mauweb.monamedia.net/cdn-cgi/l/email-protection#debabbb3b1b0b6abb0aabbacb99eb9b3bfb7b2f0bdb1b3">
+                                        <span class="__cf_email__"
+                                              data-cfemail="1175747c7e7f79647f6574637651767c70787d3f727e7c">[email&#160;protected]</span>
+                                    </a><br />
+                                    <a href="http://mauweb.monamedia.net/cdn-cgi/l/email-protection#3c5153527c5153525d12515958555d">
+                                        <span class="__cf_email__"
+                                              data-cfemail="a9c4c6c7e9c4c6c7c887c4cccdc0c8">[email&#160;protected]</span>
+                                    </a>
+                                </p>
+                                <div class="social-icons follow-icons ">
+                                    <a href="#" target="_blank"
+                                       data-label="Facebook" rel="noopener noreferrer nofollow"
+                                       class="icon plain facebook tooltip" title="Follow on Facebook">
+                                        <i class="icon-facebook"></i>
+                                    </a><a href="#" target="_blank"
+                                           rel="noopener noreferrer nofollow" data-label="Instagram"
+                                           class="icon plain  instagram tooltip" title="Follow on Instagram">
+                                        <i class="icon-instagram"></i>
+                                    </a><a href="#" target="_blank"
+                                           data-label="Twitter" rel="noopener noreferrer nofollow"
+                                           class="icon plain  twitter tooltip" title="Follow on Twitter">
+                                        <i class="icon-twitter"></i>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <style scope="scope">
+                        </style>
+                    </div>
+
+                </div><!-- .section-content -->
+
+
+                <style scope="scope">
+                    #section_1113914175 {
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        background-color: rgb(242, 235, 214);
+                    }
+                </style>
+            </section>
+
+            <div class="absolute-footer dark medium-text-center text-center">
+                <div class="container clearfix">
+
+
+                    <div class="footer-primary pull-left">
+                        <div class="copyright-footer">
+                            © Bản quyền thuộc về <công ty khách hàng>
+                                . Thiết kế website <img src="../../mona.solutions/logo.png" style="width:20px;vertical-align:sub;"
+                                                        alt="MonaMedia"> <a href=" " title="Mona Media"><strong>Mona Media</strong></a>
+                        </div>
+                    </div><!-- .left -->
+                </div><!-- .container -->
+            </div><!-- .absolute-footer -->
+
+            <a href="#top"
+               class="back-to-top button icon invert plain fixed bottom z-1 is-outline hide-for-medium circle"
+               id="top-link"><i class="icon-angle-up"></i></a>
+
+        </footer><!-- .footer-wrapper -->
+
+    </div>
+
+
+
+    <!-- Mobile Sidebar -->
+    <div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+        <div class="sidebar-menu no-scrollbar ">
+            <ul class="nav nav-sidebar  nav-vertical nav-uppercase">
+                <li class="header-search-form search-form html relative has-icon">
+                    <div class="header-search-form-wrapper">
+                        <div class="searchform-wrapper ux-search-box relative form- is-normal">
+                            <form role="search" method="get" class="searchform"
+                                  action="http://mauweb.monamedia.net/helenspa/">
+                                <div class="flex-row relative">
+                                    <div class="flex-col flex-grow">
+                                        <input type="search" class="search-field mb-0" name="s" value=""
+                                               placeholder="Tìm kiếm&hellip;" />
+                                        <input type="hidden" name="post_type" value="product" />
+                                    </div><!-- .flex-col -->
+                                    <div class="flex-col">
+                                        <button type="submit"
+                                                class="ux-search-submit submit-button secondary button icon mb-0">
+                                            <i class="icon-search"></i>
+                                        </button>
+                                    </div><!-- .flex-col -->
+                                </div><!-- .flex-row -->
+                                <div class="live-search-results text-left z-top"></div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-16 current_page_item menu-item-24">
+                    <a href="index.html" class="nav-top-link">Trang chủ</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22">
+                    <a href="gioi-thieu/index.html" class="nav-top-link">Giới thiệu</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-952">
+                    <a href="dich-vu/index.html" class="nav-top-link">Dịch vụ</a>
+                </li>
+                <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-25">
+                    <a href="category/tin-tuc/index.html" class="nav-top-link">Tin tức</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
+                    <a href="lien-he/index.html" class="nav-top-link">Liên hệ</a>
+                </li>
+                <li class="account-item has-icon menu-item">
+                    <a href="tai-khoan/index.html" class="nav-top-link nav-top-not-logged-in">
+                        <span class="header-account-title">
+                            Đăng nhập
+                        </span>
+                    </a><!-- .account-login-link -->
+
+                </li>
+                <li class="html header-social-icons ml-0">
+                    <div class="social-icons follow-icons ">
+                        <a href="http://url/" target="_blank" data-label="Facebook"
+                           rel="noopener noreferrer nofollow" class="icon plain facebook tooltip"
+                           title="Follow on Facebook"><i class="icon-facebook"></i></a><a href="http://url/"
+                                                                                          target="_blank" rel="noopener noreferrer nofollow" data-label="Instagram"
+                                                                                          class="icon plain  instagram tooltip" title="Follow on Instagram">
+                            <i class="icon-instagram"></i>
+                        </a><a href="http://url/" target="_blank"
+                               data-label="Twitter" rel="noopener noreferrer nofollow" class="icon plain  twitter tooltip"
+                               title="Follow on Twitter"><i class="icon-twitter"></i></a>
+                    </div>
+                </li>
+            </ul>
+        </div><!-- inner -->
+    </div><!-- #mobile-menu -->
+    <a href="tel:0769220162" class="hotlinemp" rel="nofollow">
+        <div class="mypage-alo-phone" style="">
+            <div class="animated infinite zoomIn mypage-alo-ph-circle">
+            </div>
+            <div class="animated infinite pulse mypage-alo-ph-circle-fill">
+            </div>
+            <div class="animated infinite tada mypage-alo-ph-img-circle">
+            </div>
+        </div>
+    </a>
+    <!-- FB Messenger -->
+    <div id="fbMsg">
+        <img data-remodal-target="fb-messenger" src="wp-content/plugins/fb-messenger/images/fb-messenger.png">
+    </div>
+
+    <div class="remodal" data-remodal-id="fb-messenger">
+        <div class="fb-page" data-tabs="messages" data-href="" data-width="310" data-height="330" data-href=""
+             data-small-header="true" data-hide-cover="false" data-show-facepile="true"
+             data-adapt-container-width="true">
+            <div class="fb-xfbml-parse-ignore">
+                <blockquote>Loading...</blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div id="fb-root"></div>
+    @*<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>*@
+    <script>
+    (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "../../connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- End FB Messenger -->
+    <div id="login-form-popup" class="lightbox-content mfp-hide">
+        <div class="woocommerce-notices-wrapper"></div>
+        <div class="account-container lightbox-inner">
+
+
+            <div class="account-login-inner">
+
+                <h3 class="uppercase">Đăng nhập</h3>
+
+                <form class="woocommerce-form woocommerce-form-login login" method="post">
+
+
+                    <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                        <label for="username">
+                            Tên tài khoản hoặc địa chỉ email&nbsp;<span class="required">*</span>
+                        </label>
+                        <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username"
+                               id="username" autocomplete="username" value="" />
+                    </p>
+                    <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                        <label for="password">Mật khẩu&nbsp;<span class="required">*</span></label>
+                        <input class="woocommerce-Input woocommerce-Input--text input-text" type="password"
+                               name="password" id="password" autocomplete="current-password" />
+                    </p>
+
+
+                    <p class="form-row">
+                        <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce"
+                               value="1887c8eda5" /><input type="hidden" name="_wp_http_referer" value="/helenspa/" />
+                        <button type="submit" class="woocommerce-Button button" name="login" value="Đăng nhập">
+                            Đăng
+                            nhập
+                        </button>
+                        <label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
+                            <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme"
+                                   type="checkbox" id="rememberme" value="forever" /> <span>Ghi nhớ mật khẩu</span>
+                        </label>
+                    </p>
+                    <p class="woocommerce-LostPassword lost_password">
+                        <a href="tai-khoan/lost-password/index.html">Quên mật khẩu?</a>
+                    </p>
+
+
+                </form>
+            </div><!-- .login-inner -->
+
+
+        </div><!-- .account-login-container -->
+
+    </div>
+    <script type="text/javascript">
+        var c = document.body.className;
+        c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+        document.body.className = c;
+    </script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wpcf7 = { "apiSettings": { "root": "http:\/\/mauweb.monamedia.net\/helenspa\/wp-json\/contact-form-7\/v1", "namespace": "contact-form-7\/v1" }, "recaptcha": { "messages": { "empty": "H\u00e3y x\u00e1c nh\u1eadn r\u1eb1ng b\u1ea1n kh\u00f4ng ph\u1ea3i l\u00e0 robot." } } };
+        /* ]]> */
+    </script>
+  
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wc_add_to_cart_params = { "ajax_url": "\/helenspa\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/helenspa\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "Xem gi\u1ecf h\u00e0ng", "cart_url": "http:\/\/mauweb.monamedia.net\/helenspa\/gio-hang\/", "is_cart": "", "cart_redirect_after_add": "no" };
+        /* ]]> */
+    </script>
+   
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var woocommerce_params = { "ajax_url": "\/helenspa\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/helenspa\/?wc-ajax=%%endpoint%%" };
+        /* ]]> */
+    </script>
+  
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wc_cart_fragments_params = { "ajax_url": "\/helenspa\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/helenspa\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_fe9cb691d5d2f529aec38fb9411cdbc8", "fragment_name": "wc_fragments_fe9cb691d5d2f529aec38fb9411cdbc8" };
+        /* ]]> */
+    </script>
+    
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var flatsomeVars = { "ajaxurl": "http:\/\/mauweb.monamedia.net\/helenspa\/wp-admin\/admin-ajax.php", "rtl": "", "sticky_height": "70", "user": { "can_edit_pages": false } };
+        /* ]]> */
+    </script>
+
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var _zxcvbnSettings = { "src": "http:\/\/mauweb.monamedia.net\/helenspa\/wp-includes\/js\/zxcvbn.min.js" };
+        /* ]]> */
+    </script>
+
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var pwsL10n = { "unknown": "M\u1eadt kh\u1ea9u m\u1ea1nh kh\u00f4ng x\u00e1c \u0111\u1ecbnh", "short": "R\u1ea5t y\u1ebfu", "bad": "Y\u1ebfu", "good": "Trung b\u00ecnh", "strong": "M\u1ea1nh", "mismatch": "M\u1eadt kh\u1ea9u kh\u00f4ng kh\u1edbp" };
+        /* ]]> */
+    </script>
+
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var wc_password_strength_meter_params = { "min_password_strength": "3", "i18n_password_error": "Vui l\u00f2ng nh\u1eadp m\u1eadt kh\u1ea9u kh\u00f3 h\u01a1n.", "i18n_password_hint": "G\u1ee3i \u00fd: M\u1eadt kh\u1ea9u ph\u1ea3i c\u00f3 \u00edt nh\u1ea5t 12 k\u00fd t\u1ef1. \u0110\u1ec3 n\u00e2ng cao \u0111\u1ed9 b\u1ea3o m\u1eadt, s\u1eed d\u1ee5ng ch\u1eef in hoa, in th\u01b0\u1eddng, ch\u1eef s\u1ed1 v\u00e0 c\u00e1c k\u00fd t\u1ef1 \u0111\u1eb7c bi\u1ec7t nh\u01b0 ! \" ? $ % ^ & )." };
+        /* ]]> */
+    </script>
+  
+    <script type="text/javascript">var essb_clicked_lovethis = false; var essb_love_you_message_thanks = "Thank you for loving this."; var essb_love_you_message_loved = "You already love this today."; var essb_lovethis = function (oInstance) { if (essb_clicked_lovethis) { alert(essb_love_you_message_loved); return; } var element = jQuery('.essb_' + oInstance); if (!element.length) { return; } var instance_post_id = jQuery(element).attr("data-essb-postid") || ""; var cookie_set = essb_get_lovecookie("essb_love_" + instance_post_id); if (cookie_set) { alert(essb_love_you_message_loved); return; } if (typeof (essb_settings) != "undefined") { jQuery.post(essb_settings.ajax_url, { 'action': 'essb_love_action', 'post_id': instance_post_id, 'service': 'love', 'nonce': essb_settings.essb3_nonce }, function (data) { if (data) { alert(essb_love_you_message_thanks); } }, 'json'); } essb_tracking_only('', 'love', oInstance, true); }; var essb_get_lovecookie = function (name) { var value = "; " + document.cookie; var parts = value.split("; " + name + "="); if (parts.length == 2) return parts.pop().split(";").shift(); }; var essb_window = function (oUrl, oService, oInstance) { var element = jQuery('.essb_' + oInstance); var instance_post_id = jQuery(element).attr("data-essb-postid") || ""; var instance_position = jQuery(element).attr("data-essb-position") || ""; var wnd; var w = 800; var h = 500; if (oService == "twitter") { w = 500; h = 300; } var left = (screen.width / 2) - (w / 2); var top = (screen.height / 2) - (h / 2); if (oService == "twitter") { wnd = window.open(oUrl, "essb_share_window", "height=300,width=500,resizable=1,scrollbars=yes,top=" + top + ",left=" + left); } else { wnd = window.open(oUrl, "essb_share_window", "height=500,width=800,resizable=1,scrollbars=yes,top=" + top + ",left=" + left); } if (typeof (essb_settings) != "undefined") { if (essb_settings.essb3_stats) { if (typeof (essb_handle_stats) != "undefined") { essb_handle_stats(oService, instance_post_id, oInstance); } } if (essb_settings.essb3_ga) { essb_ga_tracking(oService, oUrl, instance_position); } } essb_self_postcount(oService, instance_post_id); var pollTimer = window.setInterval(function () { if (wnd.closed !== false) { window.clearInterval(pollTimer); essb_smart_onclose_events(oService, instance_post_id); } }, 200); }; var essb_self_postcount = function (oService, oCountID) { if (typeof (essb_settings) != "undefined") { oCountID = String(oCountID); jQuery.post(essb_settings.ajax_url, { 'action': 'essb_self_postcount', 'post_id': oCountID, 'service': oService, 'nonce': essb_settings.essb3_nonce }, function (data) { if (data) { } }, 'json'); } }; var essb_smart_onclose_events = function (oService, oPostID) { if (typeof (essbasc_popup_show) == 'function') { essbasc_popup_show(); } if (typeof essb_acs_code == 'function') { essb_acs_code(oService, oPostID); } }; var essb_tracking_only = function (oUrl, oService, oInstance, oAfterShare) { var element = jQuery('.essb_' + oInstance); if (oUrl == "") { oUrl = document.URL; } var instance_post_id = jQuery(element).attr("data-essb-postid") || ""; var instance_position = jQuery(element).attr("data-essb-position") || ""; if (typeof (essb_settings) != "undefined") { if (essb_settings.essb3_stats) { if (typeof (essb_handle_stats) != "undefined") { essb_handle_stats(oService, instance_post_id, oInstance); } } if (essb_settings.essb3_ga) { essb_ga_tracking(oService, oUrl, instance_position); } } essb_self_postcount(oService, instance_post_id); if (oAfterShare) { essb_smart_onclose_events(oService, instance_post_id); } }; var essb_pinterest_picker = function (oInstance) { essb_tracking_only('', 'pinterest', oInstance); var e = document.createElement('script'); e.setAttribute('type', 'text/javascript'); e.setAttribute('charset', 'UTF-8'); e.setAttribute('src', '../../assets.pinterest.com/js/pinmarklet2a3b.js?r=' + Math.random() * 99999999); document.body.appendChild(e); };</script>
+
+    @Scripts.Render("~/bundles/wp-content")
+    @Scripts.Render("~/bundles/wp-includes")
+    @Scripts.Render("~/bundles/wp-admin")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

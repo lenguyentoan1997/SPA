@@ -1,0 +1,164 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+<!-- ============================================================== -->
+<!-- Bread crumb and right sidebar toggle -->
+<!-- ============================================================== -->
+<div class="page-breadcrumb">
+    <div class="row">
+        <div class="col-md-5 align-self-center">
+            <h3 class="page-title">Branches</h3>
+            <div class="d-flex align-items-center">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            @Html.ActionLink("Home", "Index", "Home")
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Branches
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Bread crumb and right sidebar toggle -->
+<!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- Container fluid  -->
+<!-- ============================================================== -->
+<div class="container-fluid">
+    <div class="widget-content searchable-container list">
+        <div class="card card-body">
+            <div class="d-flex no-block align-items-center mb-4">
+                <h4 class="card-title">All Branches</h4>
+                <div class="ms-auto">
+                    <div class="btn-group">
+                        <button type="button"
+                                class="btn btn-light-primary text-primary font-weight-medium rounded-pill px-4"
+                                onclick="createBranch()"
+                                data-toggle="modal"
+                                data-target="#branchModal">
+                            Create New Branch
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <div class="data-table">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- End Container fluid  -->
+<!-- ============================================================== -->
+<!--Modal-->
+<div id="branchModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section JavaScript{
+    <script src="~/Scripts/jquery.signalR-2.4.2.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+
+    @*Get Controller Name ViewData["ControllerName"] by ControllerName:BranchesController, ActionName:Index*@
+    <script id="helper" data-controller-name="@ViewData["ControllerName"]" src="~/Areas/Admin/Content/js/hubV1.js"></script>
+    <script>
+        $(document).on("click", ".page-item a", function (e) {
+            var href = $(e.target).attr('href').split(')');
+            var pageNumber = href[1];
+
+            $.ajax({
+                url: '/Admin/Branches/GetAllData?Page=' + pageNumber,
+                contentType: 'application/html ; charset:utf-8',
+                type: 'GET',
+                dataType: 'html',
+                success: function (result) {
+                    $('.data-table').empty().append(result);
+                }
+            });
+        });
+
+        function createBranch() {
+            $.ajax
+                ({
+                    url: "/Admin/Branches/Create/",
+                    contentType: "application/html; charset=utf-8",
+                    type: "GET",
+                    cache: !0,
+                    datatype: "html",
+                    success: function (res) {
+                        $(".modal-body").html(res)
+                    },
+                    error: function () {
+                        $(".modal-body").html("Post Not Found")
+                    }
+                })
+        };
+
+        function loadBranchDetails(id) {
+            $.ajax
+                ({
+                    url: "/Admin/Branches/Details/" + id,
+                    contentType: "application/html; charset=utf-8",
+                    type: "GET",
+                    cache: !0,
+                    datatype: "html",
+                    success: function (res) {
+                        $(".modal-body").html(res)
+                    },
+                    error: function () {
+                        $(".modal-body").html("Post Not Found")
+                    }
+                })
+        };
+
+        function editBranch(id) {
+            $.ajax
+                ({
+                    url: "/Admin/Branches/Edit/" + id,
+                    contentType: "application/html; charset=utf-8",
+                    type: "GET",
+                    cache: !0,
+                    datatype: "html",
+                    success: function (res) {
+                        $(".modal-body").html(res)
+                    },
+                    error: function () {
+                        $(".modal-body").html("Post Not Found")
+                    }
+                })
+        };
+
+        function deleteBranch(id) {
+            $.ajax
+                ({
+                    url: "/Admin/Branches/Delete/" + id,
+                    contentType: "application/html; charset=utf-8",
+                    type: "GET",
+                    cache: !0,
+                    datatype: "html",
+                    success: function (res) {
+                        $(".modal-body").html(res)
+                    },
+                    error: function () {
+                        $(".modal-body").html("Post Not Found")
+                    }
+                })
+        };
+    </script>
+}
+
+

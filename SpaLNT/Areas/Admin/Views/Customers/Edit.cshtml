@@ -1,0 +1,259 @@
+﻿@model SpaLNT.Models.Spa.Customer
+
+@{
+    Layout = null;
+}
+
+<h2>Edit</h2>
+
+<style>
+    .avatar-employee img {
+        max-height: 150px;
+    }
+</style>
+
+@using (Html.BeginForm("Edit", "Customers", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Edit Employee</h4>
+        <hr />
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <!--customer name-->
+                    <div class="row create-employee-name">
+                        <div class="col-lg-1 col-2 icon-branch-create">
+                            <svg viewBox="0 0 24 24"
+                                 width="24"
+                                 height="24"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 fill="none"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="form-floating mb-3">
+                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Name" } })
+                                <label for="tb-rfname">Name</label>
+                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--customer phone-->
+                    <div class="row create-employee-phone">
+                        <div class="col-lg-1 col-2 icon-branch-create">
+                            <svg viewBox="0 0 24 24"
+                                 width="24"
+                                 height="24"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 fill="none"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72
+                                         12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="form-floating mb-3">
+                                @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Phone" } })
+                                <label for="tb-rfname">Phone</label>
+                                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--customer email-->
+                    <div class="row create-employee-email">
+                        <div class="col-lg-1 col-2 icon-branch-create">
+                            <svg viewBox="0 0 24 24"
+                                 width="24"
+                                 height="24"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 fill="none"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 class="css-i6dzq1">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="form-floating mb-3">
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Mail" } })
+                                <label for="tb-rfname">Mail</label>
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--customer IdentityCard-->
+                    <div class="row create-employee-phone">
+                        <div class="col-lg-1 col-2 icon-branch-create">
+                            <svg viewBox="0 0 24 24"
+                                 width="24"
+                                 height="24"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 fill="none"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 class="css-i6dzq1">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="form-floating mb-3">
+                                @Html.EditorFor(model => model.IdentityCard, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Identity Card" } })
+                                <label for="tb-rfname">Identity Card</label>
+                                @Html.ValidationMessageFor(model => model.IdentityCard, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--customer job-->
+                    <div class="row create-employee-code">
+                        <div class="col-lg-1 col-2 icon-branch-create">
+                            <svg viewBox="0 0 24 24"
+                                 width="24"
+                                 height="24"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 fill="none"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 class="css-i6dzq1">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="form-floating mb-3">
+                                @Html.EditorFor(model => model.Job, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Job" } })
+                                <label for="tb-rfname">Job</label>
+                                @Html.ValidationMessageFor(model => model.Job, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--customer DOB-->
+                    <div class="row create-employee-DOB">
+                        <div class="col-lg-1 col-2 icon-branch-create">
+                            <svg viewBox="0 0 24 24"
+                                 width="24"
+                                 height="24"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 fill="none"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 class="css-i6dzq1">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="form-floating mb-3">
+                                @Html.TextBoxFor(model => model.DOB, htmlAttributes: new { @class = "form-control form-input-bg", @type = "date" })
+                                <label for="tb-rfname">Date Of Birth</label>
+                                @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--customer gender-->
+                    <div class="row create-employee-gender">
+                        <div class="col-lg-1 col-2 icon-branch-create">
+                            <svg viewBox="0 0 24 24"
+                                 width="24"
+                                 height="24"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 fill="none"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
+                                 class="css-i6dzq1">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            @Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="form-floating mb-3">
+                                @Html.DropDownList("Gender", new List<SelectListItem>{
+                            new SelectListItem{ Text="Male", Value="Male"},
+                            new SelectListItem{ Text="Female", Value="Female"},
+                            new SelectListItem{ Text="Other",Value="Other"} })
+                                @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--customer code-->
+                    <div class="row create-employee-branch">
+                        <div class="col-lg-1 col-2 icon-branch-create">
+                            <svg viewBox="0 0 24 24"
+                                 width="24"
+                                 height="24"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 fill="none"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="col-lg-11 col-10">
+                            <div class="form-floating mb-3">
+                                @Html.EditorFor(model => model.CustomerCode, new { htmlAttributes = new { @class = "form-control form-input-bg", @placeholder = "Customer Code" } })
+                                <label for="tb-rfname">Custoner Code</label>
+                                @Html.ValidationMessageFor(model => model.CustomerCode, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-5">
+                    <div class="avatar-employee text-center">
+                        <img id="avatar" src="~/Areas/Admin/Content/img/Employee/@Model.Avatar" />
+                    </div>
+                    <br />
+                    <div class="custom-file">
+                        @Html.TextBoxFor(model => model.Avatar, htmlAttributes: new { @class = "form-control", @type = "File", @id = "avatar_Employee", @name = "avatar", @onchange = "loadAvatar(this)" })
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                    <button type="button" class="dt-button buttons-html5 btn btn-danger mr-1" data-dismiss="modal"> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    function loadAvatar(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#avatar').attr('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
