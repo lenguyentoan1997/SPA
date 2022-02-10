@@ -23,11 +23,16 @@ namespace SpaLNT.Models.Spa
         [ForeignKey("Provider")]
         public int? ProviderId { get; set; }
 
+        [ForeignKey("Branch")]
+        public int? BranchId { get; set; }
+
         public byte Discount { get; set; }
 
         public string Total { get; set; }
 
         public virtual Provider Provider { get; set; }
+
+        public virtual Branch Branch { get; set; }
         
         public virtual ICollection<ProviderOrderDetail> ProviderOrderDetails { get; set; }
     }

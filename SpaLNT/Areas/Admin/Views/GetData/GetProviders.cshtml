@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "GetProviders";
+    Layout = null;
+}
+
+<style>
+    #tableProviders {
+        border-bottom: #e8eef3;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #tableProviders_filter {
+        text-align: center;
+        width: 100%;
+    }
+
+        #tableProviders_filter label {
+            width: 100%;
+        }
+
+            #tableProviders_filter label input {
+                width: 90%;
+            }
+
+    .body-table-providers-wrapper {
+        display: none;
+    }
+</style>
+
+<!--Data Table Provider-->
+<div id="dataTableProviderSearch">
+    <table class="table table-bordered" id="tableProviders">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Code </th>
+                <th scope="col">Name</th>
+                <th scope="col">Phone </th>
+                <th scope="col">Email</th>
+            </tr>
+        </thead>
+        <tbody id="bodyTableProviders">
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="code">@item.ProviderCode</td>
+                        <td class="name">@item.Name</td>
+                        <td class="phone">@item.Phone</td>
+                        <td class="email">@item.Email</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+
+

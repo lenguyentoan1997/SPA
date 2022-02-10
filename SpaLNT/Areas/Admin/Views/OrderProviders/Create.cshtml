@@ -30,6 +30,11 @@
     .body-table-providers-wrapper {
         display: none;
     }
+
+    #tableProducts_info{
+        float:none;
+        text-align:center;
+    }
 </style>
 
 <div class="page-breadcrumb">
@@ -108,14 +113,14 @@
                     <!--import products into the store-->
                     <div class="row create-product-name">
                         <div class="col-lg-2 col-3 icon-branch-create">
-                            <svg viewBox="0 0 24 24" 
-                                 width="24" 
-                                 height="24" 
-                                 stroke="currentColor" 
-                                 stroke-width="2" 
-                                 fill="none" 
-                                 stroke-linecap="round" 
-                                 stroke-linejoin="round" 
+                            <svg viewBox="0 0 24 24"
+                                 width="24"
+                                 height="24"
+                                 stroke="currentColor"
+                                 stroke-width="2"
+                                 fill="none"
+                                 stroke-linecap="round"
+                                 stroke-linejoin="round"
                                  class="css-i6dzq1">
                                 <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path>
                                 <polygon points="12 15 17 21 7 21 12 15"></polygon>
@@ -148,7 +153,7 @@
                         </div>
                         <div class="col-lg-10 col-9">
                             <div class="form-floating mb-3">
-                                <input class="form-control form-input-bg text-box single-line" placeholder="Name" type="text" value="">
+                                <input class="form-control form-input-bg text-box single-line" placeholder="Name" type="text" value="0">
                                 <label for="tb-rfname">Discount</label>
                             </div>
                         </div>
@@ -190,32 +195,38 @@
                         <h4 class="card-title">Products Information</h4>
                     </div>
                     <div class="body-products-infor">
-                            <div id="dataTableProductSearch" style="display:none;">
-                                <table class="table table-bordered">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">Image</th>
-                                            <th scope="col">Code</th>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Import Price</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="bodyTableProducts">
-                                        @if (Model.Products != null)
+                        <div id="dataTableProductSearch">
+                            <table class="table table-bordered" id="tableProducts">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Image</th>
+                                        <th scope="col">Code</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Type</th>
+                                        <th scope="col">Import Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bodyTableProducts">
+                                    @if (Model.Products != null)
+                                    {
+                                        int i = 0;
+                                        foreach (var item in Model.Products)
                                         {
-                                            foreach (var item in Model.Products)
-                                            {
-                                                <tr>
-                                                    <td><img src="~/Areas/Admin/Content/img/Product/@item.ImgAvatar" width="60" /></td>
-                                                    <td>@item.ProductCode</td>
-                                                    <td>@item.Name</td>
-                                                    <td>@item.ImportPrice</td>
-                                                </tr>
-                                            }
+                                            <tr>
+                                                @{ i++;}
+                                                <td>@i</td>
+                                                <td><img src="~/Areas/Admin/Content/img/Product/@item.ImgAvatar" width="60" /></td>
+                                                <td>@item.ProductCode</td>
+                                                <td>@item.Name</td>
+                                                <td>@item.Type.Name</td>
+                                                <td>@item.ImportPrice</td>
+                                            </tr>
                                         }
-                                    </tbody>
-                                </table>
-                            </div>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
 
                         <table class="table search-table v-middle">
                             <thead class="header-item">
@@ -244,8 +255,16 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+            $("#tableProducts").dataTable({
+                lengthMenu: [10, 25, 50, 75, 100],
+                language: {
+                    searchPlaceholder: "Search products"
+                },
+                dom: '<"input-group rounded"f><"body-table-products-wrapper"rt<"row"<"col-sm-3"l><"col-sm-5"i><"col-sm-4"p>>>'
+
+            });
+
             $("#tableProviders").dataTable({
-                responsive: true,
                 info: false,
                 lengthMenu: [5, 10, 25, 50, 75, 100],
                 language: {

@@ -29,6 +29,9 @@ namespace SpaLNT.Models.Spa
         public string BranchCode { get; set; }
 
         public virtual ICollection<Employee> Employees { get; set; }
+
+        public virtual ICollection<OrderProvider> OrderProviders { get; set; }
+
         public virtual ICollection<ProductDetail> ProductDetails { get; set; }
     }
 }

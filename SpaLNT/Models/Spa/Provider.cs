@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -13,6 +14,8 @@ namespace SpaLNT.Models.Spa
 
         public string Name { get; set; }
 
+        [Index(IsUnique = true)]
+        [MaxLength(450)]
         public string ProviderCode { get; set; }
 
         [MaxLength(15)]

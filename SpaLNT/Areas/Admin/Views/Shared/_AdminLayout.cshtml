@@ -22,8 +22,6 @@
           crossorigin="anonymous"
           referrerpolicy="no-referrer" />
 
-
-
     <!-- Custom CSS -->
     @Styles.Render("~/Areas/Admin/Content/css")
 
@@ -1012,7 +1010,7 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="@Url.Action("CreateOrderProvider","ProductImport")"
+                                    <a href="@Url.Action("Create","OrderProviders")"
                                        class="sidebar-link">
                                         <i class="mdi mdi-email-alert"></i>
                                         <span class="hide-menu"> Import </span>
@@ -2845,32 +2843,8 @@
     @Scripts.Render("~/bundles/modernizr")
     @RenderSection("JavaScript", false)
 
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#Name").autocomplete({
-                source: function (request, response) {
-                    $.ajax({
-                        url: "/ProductImport/QueryProduct",
-                        type: "POST",
-                        dataType: "json",
-                        data: { Prefix: request.term },
-                        success: function (data) {
-                            response($.map(data, function (item) {
-                                return { label: item.Name, value: item.Name, label: item.ProductCode };
-                            }))
-                        }
-                    })
-                },
-                messages: {
-                    noResults: "", results: ""
-                }
-            });
-        })
-
-    </script>
-
+    @*<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>*@
 
 
 

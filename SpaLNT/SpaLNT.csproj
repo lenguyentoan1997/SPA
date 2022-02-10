@@ -415,7 +415,9 @@
     <Compile Include="Areas\Admin\Controllers\BranchesController.cs" />
     <Compile Include="Areas\Admin\Controllers\CustomersController.cs" />
     <Compile Include="Areas\Admin\Controllers\EmployeesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\GetDataController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\OrderProvidersController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductDetailsController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductImportController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductsController.cs" />
@@ -469,6 +471,14 @@
     <Compile Include="Migrations\202201290215530_UpdateDB1.Designer.cs">
       <DependentUpon>202201290215530_UpdateDB1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202070406176_UpdateUniqueProviderCode.cs" />
+    <Compile Include="Migrations\202202070406176_UpdateUniqueProviderCode.Designer.cs">
+      <DependentUpon>202202070406176_UpdateUniqueProviderCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202100946037_Add FK_OrderProvider_Branch.cs" />
+    <Compile Include="Migrations\202202100946037_Add FK_OrderProvider_Branch.Designer.cs">
+      <DependentUpon>202202100946037_Add FK_OrderProvider_Branch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -512,7 +522,7 @@
     <Content Include="Areas\Admin\Content\img\Product\defaultAvaProduct.jpg" />
     <Content Include="Areas\Admin\Content\js\branches\data-list\dataTables.buttons.min.js" />
     <Content Include="Areas\Admin\Content\js\branches\data-list\jquery.dataTables.min.js" />
-    <Content Include="Areas\Admin\Content\js\hubV1.js" />
+    <Content Include="Areas\Admin\Content\js\hubV3.js" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -714,8 +724,13 @@
     <Content Include="Areas\Admin\Views\ProductDetails\Details.cshtml" />
     <Content Include="Areas\Admin\Views\ProductDetails\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\ProductDetails\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\ProductImport\CreateOrderProvider.cshtml" />
     <Content Include="Areas\Admin\Views\ProductImport\CreateOrderImport.cshtml" />
+    <Content Include="Areas\Admin\Views\GetData\GetProviders.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderProviders\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderProviders\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderProviders\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderProviders\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\OrderProviders\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -825,6 +840,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202201290215530_UpdateDB1.resx">
       <DependentUpon>202201290215530_UpdateDB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202070406176_UpdateUniqueProviderCode.resx">
+      <DependentUpon>202202070406176_UpdateUniqueProviderCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202100946037_Add FK_OrderProvider_Branch.resx">
+      <DependentUpon>202202100946037_Add FK_OrderProvider_Branch.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -74,8 +74,13 @@
     <script src="~/Scripts/jquery.signalR-2.4.2.min.js"></script>
     <script src="~/signalr/hubs"></script>
 
-    @*Get Controller Name ViewData["ControllerName"] by ControllerName:BranchesController, ActionName:Index*@
-    <script id="helper" data-controller-name="@ViewData["ControllerName"]" src="~/Areas/Admin/Content/js/hubV1.js"></script>
+    <script id="helper"
+            data-controller-name="@ViewData["ControllerName"]"
+            data-action-name="GetAllData"
+            data-table-name="data-table"
+            src="~/Areas/Admin/Content/js/hubV3.js">
+
+    </script>
 
     <script>
         $(document).on("click", ".page-item a", function (e) {
